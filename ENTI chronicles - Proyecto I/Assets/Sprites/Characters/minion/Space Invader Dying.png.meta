@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 16261f201a262834ba201fab9286cce1
+timeCreated: 1493240146
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Space Invader Dying_0
+    21300002: Space Invader Dying_1
+    21300004: Space Invader Dying_2
+    21300006: Space Invader Dying_3
+    21300008: Space Invader Dying_4
+    21300010: Space Invader Dying_5
+    21300012: Space Invader Dying_6
+    21300014: Space Invader Dying_7
+    21300016: Space Invader Dying_8
+    21300018: Space Invader Dying_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Space Invader Dying_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 40}
+        - {x: 13, y: 30}
+        - {x: -15, y: 40}
+        - {x: -47, y: 40}
+        - {x: -55, y: 25}
+        - {x: -55, y: -40}
+        - {x: 55, y: -40}
+        - {x: 55, y: 19}
+        - {x: 37, y: 40}
+    - name: Space Invader Dying_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 130
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23, y: 40}
+        - {x: 13, y: 30}
+        - {x: -15, y: 40}
+        - {x: -47, y: 40}
+        - {x: -55, y: 25}
+        - {x: -55, y: -40}
+        - {x: 55, y: -40}
+        - {x: 55, y: 19}
+        - {x: 37, y: 40}
+    - name: Space Invader Dying_2
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 130
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 32}
+        - {x: -47, y: 26}
+        - {x: -47, y: -19}
+        - {x: -43, y: -32}
+        - {x: 37, y: -32}
+        - {x: 47, y: -10}
+        - {x: 47, y: 10}
+        - {x: 36, y: 32}
+    - name: Space Invader Dying_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 130
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: 22}
+        - {x: -37, y: -22}
+        - {x: 37, y: -22}
+        - {x: 37, y: 22}
+    - name: Space Invader Dying_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 130
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25, y: 12}
+        - {x: -27, y: 12}
+        - {x: -27, y: -3}
+        - {x: -19, y: -12}
+        - {x: 20, y: -12}
+        - {x: 27, y: 0}
+        - {x: 27, y: 11}
+    - name: Space Invader Dying_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 12}
+        - {x: -7, y: 10}
+        - {x: -7, y: 0}
+        - {x: -5, y: -2}
+        - {x: 5, y: -2}
+        - {x: 7, y: 0}
+        - {x: 7, y: 10}
+        - {x: 5, y: 12}
+    - name: Space Invader Dying_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -30}
+        - {x: -17, y: -40}
+        - {x: -3, y: -40}
+        - {x: -3, y: -30}
+        - {x: -5, y: -28}
+        - {x: -15, y: -28}
+      - - {x: -17, y: 22}
+        - {x: -17, y: -12}
+        - {x: 17, y: -12}
+        - {x: 17, y: 22}
+      - - {x: 25, y: 12}
+        - {x: 23, y: 10}
+        - {x: 23, y: 0}
+        - {x: 25, y: -2}
+        - {x: 35, y: -2}
+        - {x: 37, y: 0}
+        - {x: 37, y: 10}
+        - {x: 35, y: 12}
+      - - {x: -37, y: 32}
+        - {x: -37, y: 18}
+        - {x: -23, y: 18}
+        - {x: -23, y: 31}
+        - {x: -25, y: 32}
+    - name: Space Invader Dying_7
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 10
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35, y: -18}
+        - {x: 33, y: -20}
+        - {x: 33, y: -30}
+        - {x: 35, y: -32}
+        - {x: 45, y: -32}
+        - {x: 47, y: -30}
+        - {x: 47, y: -20}
+        - {x: 45, y: -18}
+      - - {x: -25, y: -8}
+        - {x: -27, y: -10}
+        - {x: -27, y: -20}
+        - {x: -25, y: -22}
+        - {x: -15, y: -22}
+        - {x: -13, y: -20}
+        - {x: -13, y: -10}
+        - {x: -15, y: -8}
+      - - {x: 13, y: -8}
+        - {x: 13, y: -21}
+        - {x: 15, y: -22}
+        - {x: 25, y: -22}
+        - {x: 27, y: -20}
+        - {x: 27, y: -8}
+      - - {x: -45, y: 2}
+        - {x: -47, y: 0}
+        - {x: -47, y: -10}
+        - {x: -45, y: -12}
+        - {x: -35, y: -12}
+        - {x: -33, y: -10}
+        - {x: -33, y: 0}
+        - {x: -35, y: 2}
+      - - {x: -27, y: 32}
+        - {x: -27, y: 18}
+        - {x: -13, y: 18}
+        - {x: -13, y: 31}
+        - {x: -15, y: 32}
+      - - {x: 15, y: 32}
+        - {x: 13, y: 30}
+        - {x: 13, y: 20}
+        - {x: 15, y: 18}
+        - {x: 25, y: 18}
+        - {x: 27, y: 20}
+        - {x: 27, y: 30}
+        - {x: 25, y: 32}
+    - name: Space Invader Dying_8
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: -30}
+        - {x: -37, y: -40}
+        - {x: -23, y: -40}
+        - {x: -23, y: -30}
+        - {x: -25, y: -28}
+        - {x: -35, y: -28}
+      - - {x: 23, y: -30}
+        - {x: 23, y: -40}
+        - {x: 37, y: -40}
+        - {x: 37, y: -30}
+        - {x: 35, y: -28}
+        - {x: 25, y: -28}
+      - - {x: -35, y: 12}
+        - {x: -37, y: 10}
+        - {x: -37, y: 0}
+        - {x: -35, y: -2}
+        - {x: -25, y: -2}
+        - {x: -23, y: 0}
+        - {x: -23, y: 10}
+        - {x: -25, y: 12}
+      - - {x: 35, y: 22}
+        - {x: 33, y: 20}
+        - {x: 33, y: 10}
+        - {x: 35, y: 8}
+        - {x: 45, y: 8}
+        - {x: 47, y: 10}
+        - {x: 47, y: 20}
+        - {x: 45, y: 22}
+      - - {x: -15, y: 32}
+        - {x: -17, y: 30}
+        - {x: -17, y: 20}
+        - {x: -15, y: 18}
+        - {x: -5, y: 18}
+        - {x: -3, y: 20}
+        - {x: -3, y: 30}
+        - {x: -5, y: 32}
+    - name: Space Invader Dying_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 10
+        width: 110
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -37, y: -30}
+        - {x: -37, y: -40}
+        - {x: -23, y: -40}
+        - {x: -23, y: -30}
+        - {x: -25, y: -28}
+        - {x: -35, y: -28}
+      - - {x: 25, y: 32}
+        - {x: 23, y: 30}
+        - {x: 23, y: 20}
+        - {x: 25, y: 18}
+        - {x: 35, y: 18}
+        - {x: 37, y: 20}
+        - {x: 37, y: 30}
+        - {x: 35, y: 32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

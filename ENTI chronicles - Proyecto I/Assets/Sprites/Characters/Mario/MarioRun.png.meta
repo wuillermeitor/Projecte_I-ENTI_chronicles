@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 564cf150819227d46ad34e20125a5af2
+timeCreated: 1493969782
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Super Mario corriendo_0
+    21300002: Super Mario corriendo_1
+    21300004: Super Mario corriendo_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Super Mario corriendo_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 160
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 150}
+        - {x: -34, y: 150}
+        - {x: -80, y: 93}
+        - {x: -80, y: -142}
+        - {x: -68, y: -150}
+        - {x: -66, y: -150}
+        - {x: 8, y: -103}
+        - {x: 8, y: -150}
+        - {x: 72, y: -150}
+        - {x: 78, y: -127}
+        - {x: 80, y: -108}
+        - {x: 80, y: 131}
+    - name: Super Mario corriendo_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 160
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42, y: -130}
+        - {x: 42, y: -104}
+        - {x: 40, y: -103}
+        - {x: 72, y: -76}
+        - {x: 72, y: 108}
+        - {x: 62, y: 125}
+        - {x: 32, y: 155}
+        - {x: -24, y: 155}
+        - {x: -41, y: 149}
+        - {x: -52, y: 138}
+        - {x: -72, y: 105}
+        - {x: -72, y: -115}
+        - {x: -47, y: -155}
+        - {x: 32, y: -155}
+        - {x: 32, y: -135}
+        - {x: 30, y: -133}
+        - {x: 12, y: -133}
+    - name: Super Mario corriendo_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 70, y: -48}
+        - {x: 80, y: -16}
+        - {x: 80, y: 85}
+        - {x: 78, y: 102}
+        - {x: 61, y: 133}
+        - {x: 43, y: 160}
+        - {x: -30, y: 160}
+        - {x: -67, y: 154}
+        - {x: -80, y: 60}
+        - {x: -80, y: -144}
+        - {x: -79, y: -155}
+        - {x: -64, y: -160}
+        - {x: -10, y: -160}
+        - {x: 5, y: -133}
+        - {x: 80, y: -122}
+        - {x: 80, y: -48}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

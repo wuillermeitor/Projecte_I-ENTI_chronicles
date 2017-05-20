@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 437b24da9a4d37144b6d45e407562c76
+timeCreated: 1493970021
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MarioAttack_0
+    21300002: MarioAttack_1
+    21300004: MarioAttack_2
+    21300006: MarioAttack_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MarioAttack_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 160
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 123}
+        - {x: 79, y: 131}
+        - {x: 43, y: 155}
+        - {x: -34, y: 155}
+        - {x: -80, y: 99}
+        - {x: -80, y: 30}
+        - {x: -73, y: -29}
+        - {x: -80, y: -61}
+        - {x: -80, y: -155}
+        - {x: 72, y: -155}
+        - {x: 72, y: -132}
+        - {x: 53, y: 20}
+        - {x: 80, y: 43}
+    - name: MarioAttack_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 160
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 123}
+        - {x: 79, y: 131}
+        - {x: 43, y: 155}
+        - {x: -34, y: 155}
+        - {x: -80, y: 99}
+        - {x: -80, y: 30}
+        - {x: -73, y: -29}
+        - {x: -80, y: -61}
+        - {x: -80, y: -155}
+        - {x: 72, y: -155}
+        - {x: 72, y: -132}
+        - {x: 53, y: 20}
+        - {x: 80, y: 43}
+    - name: MarioAttack_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 160
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 123}
+        - {x: 79, y: 131}
+        - {x: 43, y: 155}
+        - {x: -34, y: 155}
+        - {x: -80, y: 99}
+        - {x: -80, y: 30}
+        - {x: -73, y: -29}
+        - {x: -80, y: -61}
+        - {x: -80, y: -155}
+        - {x: 72, y: -155}
+        - {x: 72, y: -132}
+        - {x: 53, y: 20}
+        - {x: 80, y: 43}
+    - name: MarioAttack_3
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 0
+        width: 160
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: 123}
+        - {x: 79, y: 131}
+        - {x: 43, y: 155}
+        - {x: -34, y: 155}
+        - {x: -80, y: 99}
+        - {x: -80, y: 30}
+        - {x: -73, y: -29}
+        - {x: -80, y: -61}
+        - {x: -80, y: -155}
+        - {x: 72, y: -155}
+        - {x: 72, y: -132}
+        - {x: 53, y: 20}
+        - {x: 80, y: 43}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: bf8fc8d713b52f848bd0e3722c471a7a
+timeCreated: 1492679223
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Fist_0
+    21300002: Fist_1
+    21300004: Fist_2
+    21300006: Fist_3
+    21300008: Fist_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Fist_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 83, y: -24}
+        - {x: 83, y: -19}
+        - {x: 58, y: 9}
+        - {x: 83, y: 90}
+        - {x: 83, y: 137}
+        - {x: -41, y: 137}
+        - {x: -64, y: 96}
+        - {x: -87, y: -2}
+        - {x: -90, y: -19}
+        - {x: -90, y: -155}
+        - {x: 77, y: -155}
+        - {x: 71, y: -86}
+        - {x: 66, y: -65}
+    - name: Fist_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55, y: -10}
+        - {x: 82, y: 91}
+        - {x: 82, y: 137}
+        - {x: -42, y: 137}
+        - {x: -70, y: 98}
+        - {x: -77, y: -80}
+        - {x: -89, y: -102}
+        - {x: -90, y: -116}
+        - {x: -90, y: -155}
+        - {x: 72, y: -155}
+        - {x: 74, y: -124}
+        - {x: 67, y: -83}
+    - name: Fist_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 12}
+        - {x: 80, y: 30}
+        - {x: 90, y: 89}
+        - {x: 90, y: 137}
+        - {x: -26, y: 137}
+        - {x: -59, y: 98}
+        - {x: -49, y: 10}
+        - {x: -87, y: -9}
+        - {x: -79, y: -44}
+        - {x: -90, y: -118}
+        - {x: -90, y: -155}
+        - {x: 77, y: -155}
+        - {x: 81, y: -75}
+        - {x: 90, y: -46}
+    - name: Fist_3
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 12}
+        - {x: 80, y: 30}
+        - {x: 90, y: 89}
+        - {x: 90, y: 137}
+        - {x: -26, y: 137}
+        - {x: -59, y: 98}
+        - {x: -49, y: 10}
+        - {x: -87, y: -9}
+        - {x: -79, y: -44}
+        - {x: -90, y: -118}
+        - {x: -90, y: -155}
+        - {x: 77, y: -155}
+        - {x: 81, y: -75}
+        - {x: 90, y: -46}
+    - name: Fist_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74, y: -124}
+        - {x: 61, y: -91}
+        - {x: 63, y: -32}
+        - {x: 82, y: 76}
+        - {x: 82, y: 137}
+        - {x: -42, y: 137}
+        - {x: -70, y: 98}
+        - {x: -78, y: -49}
+        - {x: -90, y: -110}
+        - {x: -90, y: -155}
+        - {x: 72, y: -155}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,163 @@
+fileFormatVersion: 2
+guid: 568a0f4a77a6c6f4bbfcad31d8f22013
+timeCreated: 1492678241
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Gun_Running_0
+    21300002: Gun_Running_1
+    21300004: Gun_Running_2
+    21300006: Gun_Running_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Gun_Running_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 320
+        width: 280
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 140, y: 38}
+        - {x: 83, y: 127}
+        - {x: -20, y: 127}
+        - {x: -74, y: 90}
+        - {x: -74, y: -31}
+        - {x: -134, y: -28}
+        - {x: -140, y: -48}
+        - {x: -140, y: -108}
+        - {x: -135, y: -114}
+        - {x: -32, y: -155}
+        - {x: 65, y: -155}
+        - {x: 88, y: -140}
+        - {x: 61, y: -68}
+        - {x: 140, y: 1}
+    - name: Gun_Running_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 320
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 35}
+        - {x: 71, y: 107}
+        - {x: 69, y: 136}
+        - {x: 65, y: 137}
+        - {x: -25, y: 137}
+        - {x: -65, y: 129}
+        - {x: -115, y: 35}
+        - {x: -115, y: -94}
+        - {x: -108, y: -147}
+        - {x: -88, y: -155}
+        - {x: -21, y: -155}
+        - {x: 14, y: -102}
+        - {x: 115, y: -7}
+        - {x: 115, y: 17}
+    - name: Gun_Running_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 270
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 135, y: 0}
+        - {x: 135, y: 27}
+        - {x: 78, y: 38}
+        - {x: 84, y: 96}
+        - {x: 77, y: 127}
+        - {x: -46, y: 127}
+        - {x: -129, y: 0}
+        - {x: -133, y: -60}
+        - {x: -135, y: -70}
+        - {x: -135, y: -128}
+        - {x: -70, y: -155}
+        - {x: 41, y: -155}
+        - {x: 59, y: -151}
+        - {x: 47, y: -110}
+        - {x: 19, y: -49}
+        - {x: 74, y: -55}
+    - name: Gun_Running_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 230
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 35}
+        - {x: 71, y: 107}
+        - {x: 69, y: 136}
+        - {x: 65, y: 137}
+        - {x: -25, y: 137}
+        - {x: -65, y: 129}
+        - {x: -115, y: 35}
+        - {x: -115, y: -94}
+        - {x: -108, y: -147}
+        - {x: -88, y: -155}
+        - {x: -21, y: -155}
+        - {x: 14, y: -102}
+        - {x: 115, y: -7}
+        - {x: 115, y: 17}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
