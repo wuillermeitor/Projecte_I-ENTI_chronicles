@@ -22,10 +22,6 @@ public class BulletGen : MonoBehaviour {
         {
             PlayerShooting();
         }
-        if (player.dead == true)
-        {
-            balas = 10;
-        }
     }
 
     IEnumerator delay()

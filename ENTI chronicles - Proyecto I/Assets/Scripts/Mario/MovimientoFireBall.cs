@@ -6,6 +6,7 @@ public class MovimientoFireBall : MonoBehaviour {
     public Rigidbody2D FBRG;
     private MarioIA mario;
     private Player player;
+    private LevelManager level;
     private GameObject Mario;
 
     public float FBMovement;
@@ -27,6 +28,7 @@ public class MovimientoFireBall : MonoBehaviour {
     private void Awake()
     {
         mario = FindObjectOfType<MarioIA>();
+        level = FindObjectOfType<LevelManager>();
         player = FindObjectOfType<Player>();
         FBRG = GetComponent<Rigidbody2D>();
         Mario = GameObject.FindWithTag("Mario");
@@ -34,6 +36,7 @@ public class MovimientoFireBall : MonoBehaviour {
 
     void Start ()
     {
+        level.active = false;
         if (mario.der == true)
         {
             FBSpeed = FBMovement;
@@ -49,13 +52,16 @@ public class MovimientoFireBall : MonoBehaviour {
     {
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         grounded = Physics2D.OverlapCircle(groundcheck.position, groundcheckRadius, whatisground);
+
+        saltar();
+        Destroy(gameObject, FBLife);
+
         if (player.inmunity == false && Herocontact == true)
         {
                 player.touched = true;
         }
-        saltar();
-        Destroy(gameObject, FBLife);
-        if (player.dead == true)
+
+        if (level.active == true)
         {
             Destroy(gameObject);
         }

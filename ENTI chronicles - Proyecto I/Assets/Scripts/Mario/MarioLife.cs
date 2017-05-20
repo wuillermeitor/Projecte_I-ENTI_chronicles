@@ -27,12 +27,6 @@ public class MarioLife : MonoBehaviour
         {
             StartCoroutine(delaybyHit());
         }
-        if (player.dead == true)
-        {
-            player.dead = false;
-            mario.GetComponent<Rigidbody2D>().position = new Vector2(191, 0.5f);
-            counter = 4;
-        }
     }
     IEnumerator delaybyHit()
     {

@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d53607c9f4a3174080993ff7c469a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FBRG: {fileID: 0}
+  FBRG: {fileID: 5060742}
   FBMovement: 8
   FBLife: 3
   groundcheck: {fileID: 418276}

@@ -98,10 +98,6 @@ public class Player : MonoBehaviour
         atacar();
         damage();
         respawn();
-
-        if (mario.bossScene == true)
-        {
-        }
     }
 
     //CAMINAR
@@ -195,7 +191,6 @@ public class Player : MonoBehaviour
             dead = true;
             Instantiate(Dying, checkpoint.transform.position, transform.rotation);
             GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
-            life.counter = 6;
         }
         if (life.counter == 0)
         {

@@ -68,8 +68,8 @@ public class MarioIA : MonoBehaviour
         bullet = FindObjectOfType<BulletGen>();
         fireball = FindObjectOfType<FireBall>();
         life = FindObjectOfType<MarioLife>();
-        run = GetComponent<Animator>();
         player = FindObjectOfType<Player>();
+        run = GetComponent<Animator>();
         attack = GetComponent<Animator>();
         jump = GetComponent<Animator>();
         death = GetComponent<Animator>();
