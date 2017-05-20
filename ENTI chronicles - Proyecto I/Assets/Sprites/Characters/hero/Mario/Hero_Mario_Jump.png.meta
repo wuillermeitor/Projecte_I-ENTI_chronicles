@@ -1,0 +1,367 @@
+fileFormatVersion: 2
+guid: a791d18d29e7e47449b31cc83b28a0b5
+timeCreated: 1495290685
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hero_Mario_Jump_0
+    21300002: Hero_Mario_Jump_1
+    21300004: Hero_Mario_Jump_2
+    21300006: Hero_Mario_Jump_3
+    21300008: Hero_Mario_Jump_4
+    21300010: Hero_Mario_Jump_5
+    21300012: Hero_Mario_Jump_6
+    21300014: Hero_Mario_Jump_7
+    21300016: Hero_Mario_Jump_8
+    21300018: Hero_Mario_Jump_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hero_Mario_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 320
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 320
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 320
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 320
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 320
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_6
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 0
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_8
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    - name: Hero_Mario_Jump_9
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 0
+        width: 190
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -30}
+        - {x: 90, y: 17}
+        - {x: 95, y: 47}
+        - {x: 95, y: 118}
+        - {x: 88, y: 132}
+        - {x: 58, y: 155}
+        - {x: -23, y: 155}
+        - {x: -65, y: 132}
+        - {x: -86, y: 57}
+        - {x: -95, y: 28}
+        - {x: -95, y: -36}
+        - {x: -85, y: -37}
+        - {x: -95, y: -98}
+        - {x: -95, y: -132}
+        - {x: -85, y: -155}
+        - {x: -33, y: -155}
+        - {x: -23, y: -146}
+        - {x: 86, y: -139}
+        - {x: 95, y: -135}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: a95fc53ec21da7547aa1634fedac8350
+timeCreated: 1495290672
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hero_Mario_Idle_0
+    21300002: Hero_Mario_Idle_1
+    21300004: Hero_Mario_Idle_2
+    21300006: Hero_Mario_Idle_3
+    21300008: Hero_Mario_Idle_4
+    21300010: Hero_Mario_Idle_5
+    21300012: Hero_Mario_Idle_6
+    21300014: Hero_Mario_Idle_7
+    21300016: Hero_Mario_Idle_8
+    21300018: Hero_Mario_Idle_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hero_Mario_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -20}
+        - {x: 66, y: 11}
+        - {x: 90, y: 81}
+        - {x: 90, y: 111}
+        - {x: 62, y: 137}
+        - {x: -29, y: 137}
+        - {x: -66, y: 133}
+        - {x: -68, y: 32}
+        - {x: -86, y: -2}
+        - {x: -90, y: -18}
+        - {x: -90, y: -155}
+        - {x: 76, y: -155}
+        - {x: 70, y: -86}
+        - {x: 65, y: -65}
+    - name: Hero_Mario_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 320
+        width: 170
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -124}
+        - {x: 85, y: -114}
+        - {x: 85, y: -11}
+        - {x: 79, y: 5}
+        - {x: 85, y: 45}
+        - {x: 85, y: 121}
+        - {x: 61, y: 147}
+        - {x: -52, y: 147}
+        - {x: -68, y: 119}
+        - {x: -85, y: 44}
+        - {x: -85, y: -49}
+        - {x: -79, y: -66}
+        - {x: -85, y: -102}
+        - {x: -85, y: -155}
+        - {x: 77, y: -155}
+    - name: Hero_Mario_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -20}
+        - {x: 66, y: 11}
+        - {x: 90, y: 81}
+        - {x: 90, y: 111}
+        - {x: 62, y: 137}
+        - {x: -29, y: 137}
+        - {x: -66, y: 133}
+        - {x: -68, y: 32}
+        - {x: -86, y: -2}
+        - {x: -90, y: -18}
+        - {x: -90, y: -155}
+        - {x: 76, y: -155}
+        - {x: 70, y: -86}
+        - {x: 65, y: -65}
+    - name: Hero_Mario_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 320
+        width: 170
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -124}
+        - {x: 85, y: -114}
+        - {x: 85, y: -11}
+        - {x: 79, y: 5}
+        - {x: 85, y: 45}
+        - {x: 85, y: 121}
+        - {x: 61, y: 147}
+        - {x: -52, y: 147}
+        - {x: -68, y: 119}
+        - {x: -85, y: 44}
+        - {x: -85, y: -49}
+        - {x: -79, y: -66}
+        - {x: -85, y: -102}
+        - {x: -85, y: -155}
+        - {x: 77, y: -155}
+    - name: Hero_Mario_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 320
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -20}
+        - {x: 66, y: 11}
+        - {x: 90, y: 81}
+        - {x: 90, y: 111}
+        - {x: 62, y: 137}
+        - {x: -29, y: 137}
+        - {x: -66, y: 133}
+        - {x: -68, y: 32}
+        - {x: -86, y: -2}
+        - {x: -90, y: -18}
+        - {x: -90, y: -155}
+        - {x: 76, y: -155}
+        - {x: 70, y: -86}
+        - {x: 65, y: -65}
+    - name: Hero_Mario_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 170
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -124}
+        - {x: 85, y: -114}
+        - {x: 85, y: -11}
+        - {x: 79, y: 5}
+        - {x: 85, y: 45}
+        - {x: 85, y: 121}
+        - {x: 61, y: 147}
+        - {x: -52, y: 147}
+        - {x: -68, y: 119}
+        - {x: -85, y: 44}
+        - {x: -85, y: -49}
+        - {x: -79, y: -66}
+        - {x: -85, y: -102}
+        - {x: -85, y: -155}
+        - {x: 77, y: -155}
+    - name: Hero_Mario_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -20}
+        - {x: 66, y: 11}
+        - {x: 90, y: 81}
+        - {x: 90, y: 111}
+        - {x: 62, y: 137}
+        - {x: -29, y: 137}
+        - {x: -66, y: 133}
+        - {x: -68, y: 32}
+        - {x: -86, y: -2}
+        - {x: -90, y: -18}
+        - {x: -90, y: -155}
+        - {x: 76, y: -155}
+        - {x: 70, y: -86}
+        - {x: 65, y: -65}
+    - name: Hero_Mario_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 170
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -124}
+        - {x: 85, y: -114}
+        - {x: 85, y: -11}
+        - {x: 79, y: 5}
+        - {x: 85, y: 45}
+        - {x: 85, y: 121}
+        - {x: 61, y: 147}
+        - {x: -52, y: 147}
+        - {x: -68, y: 119}
+        - {x: -85, y: 44}
+        - {x: -85, y: -49}
+        - {x: -79, y: -66}
+        - {x: -85, y: -102}
+        - {x: -85, y: -155}
+        - {x: 77, y: -155}
+    - name: Hero_Mario_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -20}
+        - {x: 66, y: 11}
+        - {x: 90, y: 81}
+        - {x: 90, y: 111}
+        - {x: 62, y: 137}
+        - {x: -29, y: 137}
+        - {x: -66, y: 133}
+        - {x: -68, y: 32}
+        - {x: -86, y: -2}
+        - {x: -90, y: -18}
+        - {x: -90, y: -155}
+        - {x: 76, y: -155}
+        - {x: 70, y: -86}
+        - {x: 65, y: -65}
+    - name: Hero_Mario_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 170
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: -124}
+        - {x: 85, y: -114}
+        - {x: 85, y: -11}
+        - {x: 79, y: 5}
+        - {x: 85, y: 45}
+        - {x: 85, y: 121}
+        - {x: 61, y: 147}
+        - {x: -52, y: 147}
+        - {x: -68, y: 119}
+        - {x: -85, y: 44}
+        - {x: -85, y: -49}
+        - {x: -79, y: -66}
+        - {x: -85, y: -102}
+        - {x: -85, y: -155}
+        - {x: 77, y: -155}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
