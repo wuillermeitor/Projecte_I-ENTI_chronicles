@@ -5,6 +5,7 @@ public class GoombaIA : MonoBehaviour
 {
     private Player player;
     private BulletGen bullet;
+    private FBGen fireball;
 
     Animator IsDead;
     public float moveVelocity;
@@ -46,6 +47,7 @@ public class GoombaIA : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         bullet = FindObjectOfType<BulletGen>();
+        fireball = FindObjectOfType<FBGen>();
         IsDead = GetComponent<Animator>();
         PunchedLeft = false;
         PunchedRight = false;
@@ -67,46 +69,8 @@ public class GoombaIA : MonoBehaviour
 
         if (dead == false)
         {
-            //MOVIMIENTO
-            if (collisionedLeft == true && grounded == true)
-            {
-                moveVelocity = moveRight;
-            }
-            else if (collisionedRight == true && grounded == true)
-            {
-                moveVelocity = moveLeft;
-            }
-            GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, 0);
-
-            if (player.inmunity == false)
-            {
-                //CONTACTO
-                if (PunchedLeft == true && (player.punchcheck == true || bullet.balaexistiendo == true))
-                {
-                    dead = true;
-                }
-                else if (PunchedRight == true && (player.punchcheck == true || bullet.balaexistiendo == true))
-                {
-                    dead = true;
-                    GetComponent<Transform>().localScale = new Vector2(-1, 1);
-                }
-                else if (HerocontactLeft == true && player.punchcheck == false)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactRight == true && player.punchcheck == false)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactUp == true)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactDown == true)
-                {
-                    player.touched = true;
-                }
-            }
+            movimiento();
+            contacto();           
         }
         else
         {
@@ -115,6 +79,53 @@ public class GoombaIA : MonoBehaviour
             IsDead.SetBool("IsDead", true);
             GetComponent<Collider2D>().isTrigger = true;
             GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+    }
+
+    void movimiento()
+    {
+        //MOVIMIENTO
+        if (collisionedLeft == true && grounded == true)
+        {
+            moveVelocity = moveRight;
+        }
+        else if (collisionedRight == true && grounded == true)
+        {
+            moveVelocity = moveLeft;
+        }
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, 0);
+    }
+
+    void contacto()
+    {
+        if (player.inmunity == false)
+        {
+            //CONTACTO
+            if (PunchedLeft == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
+            {
+                dead = true;
+            }
+            else if (PunchedRight == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
+            {
+                dead = true;
+                GetComponent<Transform>().localScale = new Vector2(-1, 1);
+            }
+            else if (HerocontactLeft == true && player.punchcheck == false)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactRight == true && player.punchcheck == false)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactUp == true)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactDown == true)
+            {
+                player.touched = true;
+            }
         }
     }
 }

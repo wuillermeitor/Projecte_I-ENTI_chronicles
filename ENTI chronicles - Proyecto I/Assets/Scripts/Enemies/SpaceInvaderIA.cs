@@ -12,6 +12,7 @@ public class SpaceInvaderIA : MonoBehaviour
     public GameObject EndPoint;
     private Player player;
     private BulletGen bullet;
+    private FBGen fireball;
 
     Animator IsDead;
 
@@ -39,7 +40,8 @@ public class SpaceInvaderIA : MonoBehaviour
         player = FindObjectOfType<Player>();
         IsDead = GetComponent<Animator>();
         bullet = FindObjectOfType<BulletGen>();
-        Punched= false;
+        fireball = FindObjectOfType<FBGen>();
+        Punched = false;
         dead = false;
         IsDead.SetBool("IsDead", false);
 
@@ -64,48 +66,8 @@ public class SpaceInvaderIA : MonoBehaviour
 
         if (dead == false)
         {
-            if (IsGoingRight)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, EndPoint.transform.position, enemyspeed * Time.deltaTime);
-
-                if (transform.position == EndPoint.transform.position)
-                {
-                    IsGoingRight = false;
-                }
-            }
-
-            if (!IsGoingRight)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, StartPoint.transform.position, enemyspeed * Time.deltaTime);
-                if (transform.position == StartPoint.transform.position)
-                {
-                    IsGoingRight = true;
-                }
-            }
-            if (player.inmunity == false)
-            {
-                //CONTACTO
-                if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true))
-                {
-                    dead = true;
-                }
-                else if (HerocontactLeft == true && player.punchcheck == false)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactRight == true && player.punchcheck == false)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactUp == true)
-                {
-                    player.touched = true;
-                }
-                else if (HerocontactDown == true)
-                {
-                    player.touched = true;
-                }
-            }
+            movimiento();
+            contacto();           
         }
         else
         {
@@ -113,6 +75,56 @@ public class SpaceInvaderIA : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             IsDead.SetBool("IsDead", true);
             GetComponent<Rigidbody2D>().isKinematic = false;
+        }
+    }
+
+    void movimiento()
+    {
+        if (IsGoingRight)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, EndPoint.transform.position, enemyspeed * Time.deltaTime);
+
+            if (transform.position == EndPoint.transform.position)
+            {
+                IsGoingRight = false;
+            }
+        }
+
+        if (!IsGoingRight)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, StartPoint.transform.position, enemyspeed * Time.deltaTime);
+            if (transform.position == StartPoint.transform.position)
+            {
+                IsGoingRight = true;
+            }
+        }
+    }
+
+    void contacto()
+    {
+        if (player.inmunity == false)
+        {
+            //CONTACTO
+            if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
+            {
+                dead = true;
+            }
+            else if (HerocontactLeft == true && player.punchcheck == false)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactRight == true && player.punchcheck == false)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactUp == true)
+            {
+                player.touched = true;
+            }
+            else if (HerocontactDown == true)
+            {
+                player.touched = true;
+            }
         }
     }
 }
