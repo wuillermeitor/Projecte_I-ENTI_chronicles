@@ -20,8 +20,9 @@ public class Player : MonoBehaviour
     public bool herido;
     public bool inmunity;
     public bool dead;
-
-
+    public bool marioskin;
+    public bool PlayerGun;
+    public bool PlayerMario;
 
     //Game Objects
     public GameObject checkpoint;
@@ -35,7 +36,7 @@ public class Player : MonoBehaviour
     public Animator attack;
     public Animator jump;
     public Animator idle_gun;
-    public bool PlayerGun;
+    public Animator idle_mario;
 
     //Encontrar el suelo
     public Transform groundcheck;
@@ -65,8 +66,10 @@ public class Player : MonoBehaviour
         attack = GetComponent<Animator>();
         jump = GetComponent<Animator>();
         idle_gun = GetComponent<Animator>();
+        idle_mario = GetComponent<Animator>();
         idle_normal.SetBool("idle_normal", true); //Para que el jugador empiece con el sprite normal
         PlayerGun = false;
+        PlayerMario = false;
         wait = false;
         girado = false;
         mustRecharge = false;
@@ -74,6 +77,7 @@ public class Player : MonoBehaviour
         herido = false;
         inmunity = false;
         dead = false;
+        marioskin = false;
     }    
     
     //UPDATE
@@ -91,6 +95,7 @@ public class Player : MonoBehaviour
         attack.SetBool("attack", false);
         jump.SetBool("jump", false);
         idle_gun.SetBool("idle_gun", false);
+        idle_mario.SetBool("idle_Mario", false);
         JumpCollider.GetComponent<BoxCollider2D>().isTrigger = true;
 
         caminar();
@@ -140,8 +145,6 @@ public class Player : MonoBehaviour
     //ATACAR
     void atacar()
     {
-        if (mario.inmunity == false)
-        {
             //PEGAR
             if (Input.GetKey(KeyCode.Space) && moveVelocity == 0)
             {
@@ -149,23 +152,50 @@ public class Player : MonoBehaviour
                 punchcheck = true;
             }
 
-            //POWER-UP: GUN
-            if (gun.taken == true)
+        //POWER-UP: GUN
+        PowerUpGun();
+
+        //MARIO SKIN
+        MarioSkin();
+
+        if (Input.GetKey("1") && moveVelocity == 0 && (grounded == true || grounded2 == true))
+        {
+            mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            idle_normal.SetBool("idle_normal", true);
+            idle_gun.SetBool("idle_gun", false);
+            idle_mario.SetBool("idle_Mario", false);
+            PlayerGun = false;
+            PlayerMario = false;
+        }
+    }
+
+    void PowerUpGun()
+    {
+        if (gun.taken == true)
+        {
+            if (Input.GetKey("2") && moveVelocity == 0 && (grounded == true || grounded2 == true))
             {
-                if (Input.GetKey("1") && moveVelocity == 0)
-                {
-                    mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
-                    idle_gun.SetBool("idle_gun", false);
-                    idle_normal.SetBool("idle_normal", true);
-                    PlayerGun = false;
-                }
-                if (Input.GetKey("2") && moveVelocity == 0 && (grounded == true || grounded2 == true))
-                {
-                    mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-                    idle_normal.SetBool("idle_normal", false);
-                    idle_gun.SetBool("idle_gun", true);
-                    PlayerGun = true;
-                }
+                mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+                idle_gun.SetBool("idle_gun", true);
+                PlayerGun = true;
+                PlayerMario = false;
+                idle_normal.SetBool("idle_normal", false);
+                idle_mario.SetBool("idle_Mario", false);
+            }
+        }
+    }
+
+    void MarioSkin()
+    {
+        if (marioskin == true)
+        {
+            if(Input.GetKey("3") && moveVelocity == 0 && (grounded == true || grounded2 == true))
+            {
+                idle_normal.SetBool("idle_normal", false);
+                idle_gun.SetBool("idle_gun", false);
+                idle_mario.SetBool("idle_Mario", true);
+                PlayerMario = true;
+                PlayerGun = false;
             }
         }
     }

@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour {
     private MovimientoFireBall movfb;
 
     public bool active;
+    float counter;
 
     void Start ()
     {
@@ -24,6 +25,7 @@ public class LevelManager : MonoBehaviour {
         fireball = FindObjectOfType<FireBall>();
         movfb = FindObjectOfType<MovimientoFireBall>();
         active = false;
+        counter = 0;
     }
 	
 	void Update () {
@@ -35,6 +37,15 @@ public class LevelManager : MonoBehaviour {
             Mlife.counter = 4;
             mario.GetComponent<Rigidbody2D>().position = new Vector2(191, 0.5f);
             player.dead = false;
+        }
+
+        if (mario.dead == true)
+        {
+            counter += Time.deltaTime;
+            if (counter == 5)
+            {
+
+            }
         }
 	}
 }

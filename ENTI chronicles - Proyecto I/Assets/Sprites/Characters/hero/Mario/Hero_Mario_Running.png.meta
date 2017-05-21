@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: c4af8a193d12fbb418dd86068f920a0a
-timeCreated: 1495290721
+timeCreated: 1495374113
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -82,78 +82,80 @@ TextureImporter:
     - name: Hero_Mario_Running_1
       rect:
         serializedVersion: 2
-        x: 390
+        x: 350
         y: 320
-        width: 190
+        width: 230
         height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 85, y: 107}
-        - {x: 67, y: 137}
-        - {x: -43, y: 137}
-        - {x: -66, y: 112}
-        - {x: -95, y: 9}
-        - {x: -95, y: -75}
-        - {x: -77, y: -140}
-        - {x: -67, y: -155}
-        - {x: -10, y: -155}
-        - {x: 7, y: -152}
-        - {x: 66, y: -28}
-        - {x: 95, y: 51}
-        - {x: 95, y: 97}
+      - - {x: 115, y: 101}
+        - {x: 89, y: 137}
+        - {x: -27, y: 137}
+        - {x: -41, y: 107}
+        - {x: -77, y: 13}
+        - {x: -77, y: -63}
+        - {x: -59, y: -96}
+        - {x: -74, y: -102}
+        - {x: -55, y: -155}
+        - {x: 20, y: -155}
+        - {x: 30, y: -152}
+        - {x: 18, y: -118}
+        - {x: 86, y: -28}
+        - {x: 115, y: 45}
     - name: Hero_Mario_Running_2
       rect:
         serializedVersion: 2
-        x: 40
+        x: 30
         y: 0
-        width: 220
+        width: 230
         height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 110, y: 29}
-        - {x: 110, y: 87}
-        - {x: 100, y: 97}
-        - {x: 82, y: 127}
-        - {x: -26, y: 127}
-        - {x: -31, y: 126}
-        - {x: -43, y: 96}
-        - {x: -94, y: -3}
-        - {x: -110, y: -69}
-        - {x: -110, y: -125}
-        - {x: -41, y: -155}
-        - {x: 66, y: -155}
-        - {x: 84, y: -151}
-        - {x: 72, y: -110}
-        - {x: 98, y: -34}
-        - {x: 109, y: 18}
+      - - {x: 115, y: 13}
+        - {x: 115, y: 94}
+        - {x: 90, y: 127}
+        - {x: -21, y: 127}
+        - {x: -26, y: 126}
+        - {x: -78, y: 26}
+        - {x: -103, y: -52}
+        - {x: -107, y: -69}
+        - {x: -107, y: -126}
+        - {x: -100, y: -130}
+        - {x: -22, y: -142}
+        - {x: 2, y: -155}
+        - {x: 68, y: -155}
+        - {x: 80, y: -147}
+        - {x: 77, y: -110}
+        - {x: 103, y: -34}
     - name: Hero_Mario_Running_3
       rect:
         serializedVersion: 2
-        x: 390
+        x: 350
         y: 0
-        width: 190
+        width: 230
         height: 310
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 85, y: 107}
-        - {x: 67, y: 137}
-        - {x: -43, y: 137}
-        - {x: -66, y: 112}
-        - {x: -95, y: 9}
-        - {x: -95, y: -75}
-        - {x: -77, y: -140}
-        - {x: -67, y: -155}
-        - {x: -10, y: -155}
-        - {x: 7, y: -152}
-        - {x: 66, y: -28}
-        - {x: 95, y: 51}
-        - {x: 95, y: 97}
+      - - {x: 115, y: 101}
+        - {x: 89, y: 137}
+        - {x: -27, y: 137}
+        - {x: -41, y: 107}
+        - {x: -77, y: 13}
+        - {x: -77, y: -63}
+        - {x: -59, y: -96}
+        - {x: -74, y: -102}
+        - {x: -55, y: -155}
+        - {x: 20, y: -155}
+        - {x: 30, y: -152}
+        - {x: 18, y: -118}
+        - {x: 86, y: -28}
+        - {x: 115, y: 45}
     outline: []
   spritePackingTag: 
   userData: 

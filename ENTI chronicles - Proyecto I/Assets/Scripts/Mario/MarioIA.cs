@@ -24,7 +24,7 @@ public class MarioIA : MonoBehaviour
     public bool herido;
     public bool inmunity;
     public bool touched;
-    private bool dead;
+    public bool dead;
     public float counter = 0f;
     public bool ataque;
     public bool bossScene;
@@ -266,6 +266,7 @@ public class MarioIA : MonoBehaviour
         if (life.counter == 0)
         {
             dead = true;
+            player.marioskin = true;
             StartCoroutine(delaydeath());
         }
     }

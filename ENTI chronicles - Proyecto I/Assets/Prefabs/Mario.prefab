@@ -325,6 +325,7 @@ MonoBehaviour:
   herido: 0
   inmunity: 0
   touched: 0
+  dead: 0
   counter: 0
   ataque: 0
   bossScene: 0
