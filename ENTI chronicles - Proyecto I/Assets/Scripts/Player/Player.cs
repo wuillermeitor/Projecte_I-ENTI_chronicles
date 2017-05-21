@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
     public GameObject Dying;
     public GameObject JumpCollider;
     public GameObject mana;
+    public GameObject heromana;
 
     //Animaciones
     Animator idle_normal;
@@ -61,6 +62,8 @@ public class Player : MonoBehaviour
         mario = FindObjectOfType<MarioIA>();
         mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         mana = GameObject.Find("FullMana");
+        heromana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        heromana = GameObject.Find("HeroPowerMana");
         idle_normal = GetComponent<Animator>();
         run = GetComponent<Animator>();
         attack = GetComponent<Animator>();
@@ -145,12 +148,12 @@ public class Player : MonoBehaviour
     //ATACAR
     void atacar()
     {
-            //PEGAR
-            if (Input.GetKey(KeyCode.Space) && moveVelocity == 0)
-            {
-                attack.SetBool("attack", true);
-                punchcheck = true;
-            }
+        //PEGAR
+        if (Input.GetKey(KeyCode.Space) && moveVelocity == 0)
+        {
+            attack.SetBool("attack", true);
+            punchcheck = true;
+        }
 
         //POWER-UP: GUN
         PowerUpGun();
@@ -161,6 +164,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey("1") && moveVelocity == 0 && (grounded == true || grounded2 == true))
         {
             mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            heromana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             idle_normal.SetBool("idle_normal", true);
             idle_gun.SetBool("idle_gun", false);
             idle_mario.SetBool("idle_Mario", false);
@@ -176,6 +180,7 @@ public class Player : MonoBehaviour
             if (Input.GetKey("2") && moveVelocity == 0 && (grounded == true || grounded2 == true))
             {
                 mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+                heromana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
                 idle_gun.SetBool("idle_gun", true);
                 PlayerGun = true;
                 PlayerMario = false;
@@ -191,6 +196,8 @@ public class Player : MonoBehaviour
         {
             if(Input.GetKey("3") && moveVelocity == 0 && (grounded == true || grounded2 == true))
             {
+                heromana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+                mana.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
                 idle_normal.SetBool("idle_normal", false);
                 idle_gun.SetBool("idle_gun", false);
                 idle_mario.SetBool("idle_Mario", true);

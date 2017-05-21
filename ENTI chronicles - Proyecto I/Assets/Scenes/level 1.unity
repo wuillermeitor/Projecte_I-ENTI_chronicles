@@ -85,6 +85,11 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!95 &6318743 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9546978, guid: d5a05907f9d553a49a54dcff5dbb2030,
+    type: 2}
+  m_PrefabInternal: {fileID: 1787772757}
 --- !u!1 &19058885
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +650,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 235ef00af3345154f90d5be49eab8433, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!114 &179537281
@@ -1841,7 +1846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 235ef00af3345154f90d5be49eab8433, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!114 &772817675
@@ -2020,6 +2025,10 @@ EdgeCollider2D:
   - {x: -11.888931, y: -8.981943}
   - {x: -9.708786, y: -7.099234}
   - {x: -3.742389, y: -7.0977063}
+--- !u!1 &823346223 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 121064, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
+  m_PrefabInternal: {fileID: 1787772757}
 --- !u!1 &876158510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2260,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -15.2
+      value: 129.4
       objectReference: {fileID: 0}
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2289,6 +2298,14 @@ Prefab:
       propertyPath: mana
       value: 
       objectReference: {fileID: 336333543}
+    - target: {fileID: 11456822, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
+      propertyPath: heromana
+      value: 
+      objectReference: {fileID: 823346223}
+    - target: {fileID: 11419624, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
+      propertyPath: mana
+      value: 
+      objectReference: {fileID: 6318743}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
   m_IsPrefabParent: 0
@@ -2863,7 +2880,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 235ef00af3345154f90d5be49eab8433, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5661765, g: 0.5661765, b: 0.5661765, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!114 &1366684035
@@ -3139,7 +3156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 235ef00af3345154f90d5be49eab8433, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!114 &1396233459
@@ -3860,7 +3877,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 445920, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -15.2
+      value: 129.4
       objectReference: {fileID: 0}
     - target: {fileID: 445920, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_LocalPosition.y

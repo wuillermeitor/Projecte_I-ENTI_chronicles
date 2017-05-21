@@ -79,6 +79,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &181780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417936}
+  - 114: {fileID: 11419624}
+  m_Layer: 9
+  m_Name: FBSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: -3545028842045912814, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &188564
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +157,20 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 464454}
-  m_RootOrder: 4
+  m_RootOrder: 6
+--- !u!4 &417936
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.11, y: -0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 464454}
+  m_RootOrder: 2
 --- !u!4 &422378
 Transform:
   m_ObjectHideFlags: 1
@@ -154,7 +183,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 464454}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!4 &429642
 Transform:
   m_ObjectHideFlags: 1
@@ -180,7 +209,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 464454}
-  m_RootOrder: 6
+  m_RootOrder: 3
 --- !u!4 &458490
 Transform:
   m_ObjectHideFlags: 1
@@ -193,7 +222,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 464454}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!4 &464454
 Transform:
   m_ObjectHideFlags: 1
@@ -201,17 +230,18 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.6, y: 1.32, z: 0}
+  m_LocalPosition: {x: 129.4, y: 1.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 467656}
   - {fileID: 429642}
+  - {fileID: 417936}
+  - {fileID: 431614}
   - {fileID: 458490}
   - {fileID: 422378}
   - {fileID: 412522}
   - {fileID: 492588}
-  - {fileID: 431614}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &467656
@@ -239,7 +269,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 464454}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!50 &5071192
 Rigidbody2D:
   serializedVersion: 2
@@ -330,6 +360,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11419624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2d68ba360f90249960839b7281c01a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FBPrefab: {fileID: 160854, guid: 18c704607b9b2e04d955da962d5dfd97, type: 2}
+  FBSpawner: {fileID: 417936}
+  mana: {fileID: 0}
+  FB: 10
+  FBexistiendo: 0
 --- !u!114 &11456822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -356,6 +402,7 @@ MonoBehaviour:
   Dying: {fileID: 194118, guid: 2060332fa1852944091b749bd4b0da5f, type: 2}
   JumpCollider: {fileID: 123310}
   mana: {fileID: 0}
+  heromana: {fileID: 0}
   attack: {fileID: 0}
   jump: {fileID: 0}
   idle_gun: {fileID: 0}
