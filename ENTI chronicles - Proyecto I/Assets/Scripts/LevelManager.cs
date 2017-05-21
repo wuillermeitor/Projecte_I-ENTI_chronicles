@@ -28,8 +28,9 @@ public class LevelManager : MonoBehaviour {
         active = false;
         counter = 0;
     }
-	
-	void Update () {
+
+    void Update()
+    {
         if (player.dead == true)
         {
             active = true;
@@ -45,8 +46,7 @@ public class LevelManager : MonoBehaviour {
             counter += Time.deltaTime;
             if (counter >= 3)
             {
-                Application.LoadLevel(cinematic);
             }
         }
-	}
+    }
 }

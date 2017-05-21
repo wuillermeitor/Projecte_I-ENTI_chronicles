@@ -11,6 +11,7 @@ public class MarioGivingPower : MonoBehaviour
     public float counterM;
     public float counterP;
     public float cameralight;
+    public string level1;
 
     // Use this for initialization
     void Start()
@@ -39,6 +40,10 @@ public class MarioGivingPower : MonoBehaviour
             mario.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, counterM);
             counterP += Time.deltaTime / 1.5f;
             player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, counterP);
+        }
+        if (cameralight <= 0)
+        {
+            Application.LoadLevel(level1);
         }
     }
 }
