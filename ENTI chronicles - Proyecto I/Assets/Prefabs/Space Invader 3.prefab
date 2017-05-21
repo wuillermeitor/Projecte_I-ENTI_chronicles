@@ -97,6 +97,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &146608
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 476566}
+  m_Layer: 15
+  m_Name: Limitscheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &157092
 GameObject:
   m_ObjectHideFlags: 1
@@ -183,7 +198,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 469532}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &437146
 Transform:
   m_ObjectHideFlags: 1
@@ -196,7 +211,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 469532}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &438470
 Transform:
   m_ObjectHideFlags: 1
@@ -209,7 +224,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 469532}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &442178
 Transform:
   m_ObjectHideFlags: 1
@@ -234,12 +249,26 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 476566}
   - {fileID: 409194}
   - {fileID: 438470}
   - {fileID: 491738}
   - {fileID: 437146}
   - {fileID: 477232}
   m_Father: {fileID: 403084}
+  m_RootOrder: 0
+--- !u!4 &476566
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 469532}
   m_RootOrder: 0
 --- !u!4 &477232
 Transform:
@@ -253,7 +282,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 469532}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!4 &491738
 Transform:
   m_ObjectHideFlags: 1
@@ -266,7 +295,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 469532}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!50 &5019754
 Rigidbody2D:
   serializedVersion: 2
@@ -359,6 +388,13 @@ MonoBehaviour:
   whatisHerocontact:
     serializedVersion: 2
     m_Bits: 16384
+  limitscheck: {fileID: 476566}
+  limitscheckRadius: 0.1
+  whatislimit:
+    serializedVersion: 2
+    m_Bits: 4096
+  outoflimit: 0
+  punchcheck: 0
 --- !u!212 &21215432
 SpriteRenderer:
   m_ObjectHideFlags: 1

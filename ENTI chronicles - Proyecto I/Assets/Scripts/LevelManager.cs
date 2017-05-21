@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour {
 
     public bool active;
     float counter;
+    public string cinematic;
 
     void Start ()
     {
@@ -42,9 +43,9 @@ public class LevelManager : MonoBehaviour {
         if (mario.dead == true)
         {
             counter += Time.deltaTime;
-            if (counter == 5)
+            if (counter >= 3)
             {
-
+                Application.LoadLevel(cinematic);
             }
         }
 	}

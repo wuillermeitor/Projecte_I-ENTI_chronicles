@@ -30,6 +30,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &127626
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 408612}
+  m_Layer: 15
+  m_Name: Limitscheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &135156
 GameObject:
   m_ObjectHideFlags: 1
@@ -184,6 +199,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 403440}
   m_RootOrder: 1
+--- !u!4 &408612
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 425772}
+  m_RootOrder: 5
 --- !u!4 &425682
 Transform:
   m_ObjectHideFlags: 1
@@ -213,6 +241,7 @@ Transform:
   - {fileID: 425682}
   - {fileID: 441650}
   - {fileID: 449776}
+  - {fileID: 408612}
   m_Father: {fileID: 403440}
   m_RootOrder: 0
 --- !u!4 &427456
@@ -359,6 +388,13 @@ MonoBehaviour:
   whatisHerocontact:
     serializedVersion: 2
     m_Bits: 16384
+  limitscheck: {fileID: 408612}
+  limitscheckRadius: 0.1
+  whatislimit:
+    serializedVersion: 2
+    m_Bits: 4096
+  outoflimit: 0
+  punchcheck: 0
 --- !u!212 &21204060
 SpriteRenderer:
   m_ObjectHideFlags: 1

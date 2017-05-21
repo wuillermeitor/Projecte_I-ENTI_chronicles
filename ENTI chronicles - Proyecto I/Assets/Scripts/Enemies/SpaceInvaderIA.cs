@@ -22,6 +22,7 @@ public class SpaceInvaderIA : MonoBehaviour
     public LayerMask whatispunch;
     private bool Punched;
     private bool dead;
+
     //Encontrar contacto con el jugador
     public Transform HerocontactcheckLeft;
     public Transform HerocontactcheckRight;
@@ -34,6 +35,12 @@ public class SpaceInvaderIA : MonoBehaviour
     private bool HerocontactUp;
     private bool HerocontactDown;
 
+    //Encontrar Límite del mapa
+    public Transform limitscheck;
+    public float limitscheckRadius;
+    public LayerMask whatislimit;
+    public bool outoflimit;
+    public bool punchcheck;
 
     void Start()
     {
@@ -63,6 +70,7 @@ public class SpaceInvaderIA : MonoBehaviour
         HerocontactLeft = Physics2D.OverlapCircle(HerocontactcheckRight.position, HerocontactcheckRadius, whatisHerocontact);
         HerocontactUp = Physics2D.OverlapCircle(HerocontactcheckUp.position, HerocontactcheckRadius, whatisHerocontact);
         HerocontactDown = Physics2D.OverlapCircle(HerocontactcheckDown.position, HerocontactcheckRadius, whatisHerocontact);
+        outoflimit = Physics2D.OverlapCircle(limitscheck.position, limitscheckRadius, whatislimit);
 
         if (dead == false)
         {
@@ -75,6 +83,10 @@ public class SpaceInvaderIA : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             IsDead.SetBool("IsDead", true);
             GetComponent<Rigidbody2D>().isKinematic = false;
+            if (outoflimit == true)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
