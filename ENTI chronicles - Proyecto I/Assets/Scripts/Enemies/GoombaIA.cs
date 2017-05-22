@@ -6,7 +6,6 @@ public class GoombaIA : MonoBehaviour
     private Player player;
     private BulletGen bullet;
     private FBGen fireball;
-    private LevelManager lvlman;
 
     Animator IsDead;
     public float moveVelocity;
@@ -46,7 +45,6 @@ public class GoombaIA : MonoBehaviour
 
     void Start()
     {
-        lvlman = FindObjectOfType<LevelManager>();
         player = FindObjectOfType<Player>();
         bullet = FindObjectOfType<BulletGen>();
         fireball = FindObjectOfType<FBGen>();
@@ -106,12 +104,10 @@ public class GoombaIA : MonoBehaviour
             if (PunchedLeft == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
             {
                 dead = true;
-                lvlman.enemyTouched = true;
             }
             else if (PunchedRight == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
             {
                 dead = true;
-                lvlman.enemyTouched = true;
                 GetComponent<Transform>().localScale = new Vector2(-1, 1);
             }
             else if (HerocontactLeft == true && player.punchcheck == false)

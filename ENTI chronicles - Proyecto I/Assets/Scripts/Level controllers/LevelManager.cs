@@ -15,7 +15,6 @@ public class LevelManager : MonoBehaviour {
     private TakePowerUp gun;
 
     public bool active;
-    public bool enemyTouched;
     float counter;
     public string cinematic;
 
@@ -30,7 +29,6 @@ public class LevelManager : MonoBehaviour {
         movfb = FindObjectOfType<MovimientoFireBall>();
         gun = FindObjectOfType<TakePowerUp>();
         active = false;
-        enemyTouched = false;
         counter = 0;
     }
 

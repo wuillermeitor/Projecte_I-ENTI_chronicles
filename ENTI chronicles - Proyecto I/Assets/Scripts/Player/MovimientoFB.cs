@@ -6,7 +6,7 @@ public class MovimientoFB : MonoBehaviour {
     public Rigidbody2D FBRG;
     private Player player;
     private GameObject Player;
-    private LevelManager lvlman;
+    private AllSceneController lvlman;
 
     public float FBMovement;
     private float FBSpeed;
@@ -21,7 +21,7 @@ public class MovimientoFB : MonoBehaviour {
 
     private void Awake()
     {
-        lvlman = FindObjectOfType<LevelManager>();
+        lvlman = FindObjectOfType<AllSceneController>();
         player = FindObjectOfType<Player>();
         FBRG = GetComponent<Rigidbody2D>();
         Player = GameObject.FindWithTag("Player");

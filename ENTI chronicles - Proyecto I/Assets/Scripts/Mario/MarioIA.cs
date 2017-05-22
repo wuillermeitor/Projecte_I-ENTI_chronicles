@@ -10,7 +10,7 @@ public class MarioIA : MonoBehaviour
     private BulletGen bullet;
     private Movimiento_balas balas;
     public GameObject vida;
-    private LevelManager lvlman;
+    private AllSceneController lvlman;
 
     //Variables
     public float velocityMove;
@@ -67,7 +67,7 @@ public class MarioIA : MonoBehaviour
 
     void Start()
     {
-        lvlman = FindObjectOfType<LevelManager>();
+        lvlman = FindObjectOfType<AllSceneController>();
         balas = FindObjectOfType<Movimiento_balas>();
         bullet = FindObjectOfType<BulletGen>();
         fireball = FindObjectOfType<FireBall>();

@@ -16,6 +16,7 @@ GameObject:
   - 255: {fileID: 25506772}
   - 95: {fileID: 9555884}
   - 212: {fileID: 21212982}
+  - 114: {fileID: 11419610}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -126,7 +127,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 1.95, z: -1}
+  m_LocalPosition: {x: 128, y: 2.88, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -312,6 +313,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11419610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e8780ed470e6e40a71c42e16e46895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTouched: 0
 --- !u!114 &11473476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,7 +508,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -20, y: 1.95}
+  m_ConnectedAnchor: {x: 0, y: 1.56}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!255 &25563510
@@ -512,7 +525,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.13953781, y: -0.3561442}
+  m_ConnectedAnchor: {x: 0.13954163, y: 0.5738559}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &100100000

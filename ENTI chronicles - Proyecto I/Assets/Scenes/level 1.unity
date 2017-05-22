@@ -879,7 +879,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 439998, guid: c5c2429626ccafa49b2ec67bedbd9cd7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 196666, guid: c5c2429626ccafa49b2ec67bedbd9cd7, type: 2}
       propertyPath: m_Name
@@ -956,7 +956,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 415404, guid: bf008af5273cfdc438c50e19438fc6ba, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf008af5273cfdc438c50e19438fc6ba, type: 2}
@@ -1132,7 +1132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 486486, guid: fed5dd28622748d418fbbc7c574e3362, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 164638, guid: fed5dd28622748d418fbbc7c574e3362, type: 2}
       propertyPath: m_Name
@@ -2676,6 +2676,7 @@ Transform:
   - {fileID: 1374685469}
   - {fileID: 65578039}
   - {fileID: 275577848}
+  - {fileID: 1456299113}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &1332168027
@@ -3246,6 +3247,49 @@ SpriteRenderer:
 Transform:
   m_PrefabParentObject: {fileID: 440702, guid: 6f6512ece126a72428da4f8ce43ad006, type: 2}
   m_PrefabInternal: {fileID: 932158289}
+--- !u!1 &1456299112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1456299113}
+  - 61: {fileID: 1456299114}
+  m_Layer: 0
+  m_Name: DoorLock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1456299113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1456299112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 201.54, y: 2.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1288053069}
+  m_RootOrder: 9
+--- !u!61 &1456299114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1456299112}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 15, y: 10}
 --- !u!4 &1501261258 stripped
 Transform:
   m_PrefabParentObject: {fileID: 403440, guid: 0c94310c63040d947b6e8e26628151e7, type: 2}
@@ -3807,34 +3851,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 25563510, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 116788873}
-    - target: {fileID: 25506772, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 116788873}
     - target: {fileID: 9555884, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: e699c07c18a107b4da6b11d994537ab3, type: 2}
     - target: {fileID: 25506772, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 25506772, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 1.56
-      objectReference: {fileID: 0}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 116788873}
     - target: {fileID: 25563510, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.13953876
-      objectReference: {fileID: 0}
-    - target: {fileID: 25563510, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.5738559
-      objectReference: {fileID: 0}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 116788873}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
   m_IsPrefabParent: 0
