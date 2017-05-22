@@ -8,7 +8,9 @@ public class MarioIA : MonoBehaviour
     private FireBall fireball;
     private Player player;
     private BulletGen bullet;
+    private Movimiento_balas balas;
     public GameObject vida;
+    private LevelManager lvlman;
 
     //Variables
     public float velocityMove;
@@ -65,6 +67,8 @@ public class MarioIA : MonoBehaviour
 
     void Start()
     {
+        lvlman = FindObjectOfType<LevelManager>();
+        balas = FindObjectOfType<Movimiento_balas>();
         bullet = FindObjectOfType<BulletGen>();
         fireball = FindObjectOfType<FireBall>();
         life = FindObjectOfType<MarioLife>();
@@ -239,6 +243,7 @@ public class MarioIA : MonoBehaviour
         {
             touched = true;
             bullet.balaexistiendo = false;
+            lvlman.enemyTouched = true;
         }
         if (touched == true && inmunity == false && life.counter != 0)
         {

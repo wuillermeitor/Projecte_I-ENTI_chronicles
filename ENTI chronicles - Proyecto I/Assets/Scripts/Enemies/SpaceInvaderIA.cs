@@ -13,6 +13,7 @@ public class SpaceInvaderIA : MonoBehaviour
     private Player player;
     private BulletGen bullet;
     private FBGen fireball;
+    private LevelManager lvlman;
 
     Animator IsDead;
 
@@ -44,6 +45,7 @@ public class SpaceInvaderIA : MonoBehaviour
 
     void Start()
     {
+        lvlman = FindObjectOfType<LevelManager>();
         player = FindObjectOfType<Player>();
         IsDead = GetComponent<Animator>();
         bullet = FindObjectOfType<BulletGen>();
@@ -120,6 +122,7 @@ public class SpaceInvaderIA : MonoBehaviour
             if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
             {
                 dead = true;
+                lvlman.enemyTouched = true;
             }
             else if (HerocontactLeft == true && player.punchcheck == false)
             {

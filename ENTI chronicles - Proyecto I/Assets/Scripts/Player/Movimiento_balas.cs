@@ -6,6 +6,7 @@ public class Movimiento_balas : MonoBehaviour
     public Rigidbody2D BulletRG;
     private Player player;
     private GameObject Player;
+    private LevelManager lvlman;
 
     public float bulletMovement;
     private float BulletSpeed;
@@ -13,6 +14,7 @@ public class Movimiento_balas : MonoBehaviour
 
     private void Awake()
     {
+        lvlman = FindObjectOfType<LevelManager>();
         player = FindObjectOfType<Player>();
         BulletRG = GetComponent<Rigidbody2D>();
         Player = GameObject.FindWithTag("Player");
@@ -33,6 +35,11 @@ public class Movimiento_balas : MonoBehaviour
     
     void Update()
     {
+        if (lvlman.enemyTouched == true)
+        {
+            Destroy(gameObject);
+            lvlman.enemyTouched = false;
+        }
         Destroy(gameObject, BulletLife);
     }
 }
