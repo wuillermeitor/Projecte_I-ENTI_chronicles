@@ -1,0 +1,283 @@
+fileFormatVersion: 2
+guid: e558a14abd0f44d4190102966f50e6b7
+timeCreated: 1495478448
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: movil spikes_0
+    21300002: movil spikes_1
+    21300004: movil spikes_2
+    21300006: movil spikes_3
+    21300008: movil spikes_4
+    21300010: movil spikes_5
+    21300012: movil spikes_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: movil spikes_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -133.5, y: 24.5}
+        - {x: -141.5, y: -3.5}
+        - {x: -141.5, y: -24.5}
+        - {x: -51.5, y: -24.5}
+        - {x: -51.5, y: -7.5}
+        - {x: -60.5, y: 24.5}
+      - - {x: -13.5, y: 24.5}
+        - {x: -46.5, y: -6.5}
+        - {x: -46.5, y: -24.5}
+        - {x: 46.5, y: -24.5}
+        - {x: 46.5, y: -11.5}
+        - {x: 11.5, y: 24.5}
+      - - {x: 84.5, y: 24.5}
+        - {x: 51.5, y: -9.5}
+        - {x: 51.5, y: -24.5}
+        - {x: 141.5, y: -24.5}
+        - {x: 141.5, y: -8.5}
+        - {x: 140.5, y: -0.5}
+        - {x: 108.5, y: 24.5}
+    - name: movil spikes_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -114.42859, y: 24.5}
+        - {x: -135.42859, y: 15.5}
+        - {x: -141.42859, y: -9.5}
+        - {x: -141.42859, y: -24.5}
+        - {x: -50.42859, y: -24.5}
+        - {x: -50.42859, y: 4.5}
+        - {x: -72.42859, y: 24.5}
+      - - {x: -33.42859, y: 24.5}
+        - {x: -45.42859, y: -8.5}
+        - {x: -45.42859, y: -24.5}
+        - {x: 46.57141, y: -24.5}
+        - {x: 46.57141, y: -10.5}
+        - {x: 15.571411, y: 24.5}
+      - - {x: 84.57141, y: 24.5}
+        - {x: 51.57141, y: 0.5}
+        - {x: 51.57141, y: -24.5}
+        - {x: 142.57141, y: -24.5}
+        - {x: 142.57141, y: -11.5}
+        - {x: 121.57141, y: 24.5}
+    - name: movil spikes_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128.35718, y: 24.5}
+        - {x: -141.35718, y: 6.5}
+        - {x: -141.35718, y: -24.5}
+        - {x: -51.357178, y: -24.5}
+        - {x: -51.357178, y: 3.5}
+        - {x: -77.35718, y: 24.5}
+      - - {x: -13.357178, y: 24.5}
+        - {x: -46.357178, y: -6.5}
+        - {x: -46.357178, y: -24.5}
+        - {x: 46.642822, y: -24.5}
+        - {x: 46.642822, y: -11.5}
+        - {x: 11.642822, y: 24.5}
+      - - {x: 84.64282, y: 24.5}
+        - {x: 51.642822, y: -9.5}
+        - {x: 51.642822, y: -24.5}
+        - {x: 141.64282, y: -24.5}
+        - {x: 141.64282, y: -8.5}
+        - {x: 140.64282, y: -0.5}
+        - {x: 108.64282, y: 24.5}
+    - name: movil spikes_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76.285706, y: 24.5}
+        - {x: -116.285706, y: 24.5}
+        - {x: -133.2857, y: 17.5}
+        - {x: -141.2857, y: -10.5}
+        - {x: -141.2857, y: -24.5}
+        - {x: -50.285706, y: -24.5}
+        - {x: -50.285706, y: -10.5}
+        - {x: -56.285706, y: -0.5}
+      - - {x: -8.285706, y: 24.5}
+        - {x: -18.285706, y: 20.5}
+        - {x: -37.285706, y: -3.5}
+        - {x: -45.285706, y: -14.5}
+        - {x: -45.285706, y: -24.5}
+        - {x: 46.714294, y: -24.5}
+        - {x: 46.714294, y: -10.5}
+        - {x: 15.714294, y: 24.5}
+      - - {x: 80.714294, y: 24.5}
+        - {x: 51.714294, y: -8.5}
+        - {x: 51.714294, y: -24.5}
+        - {x: 142.7143, y: -24.5}
+        - {x: 142.7143, y: -6.5}
+        - {x: 112.714294, y: 24.5}
+    - name: movil spikes_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -115.714355, y: 24.5}
+        - {x: -127.714355, y: 12.5}
+        - {x: -141.71436, y: -3.5}
+        - {x: -141.71436, y: -24.5}
+        - {x: -50.714355, y: -24.5}
+        - {x: -50.714355, y: -14.5}
+        - {x: -62.714355, y: 14.5}
+        - {x: -86.714355, y: 24.5}
+      - - {x: -24.714355, y: 24.5}
+        - {x: -39.714355, y: 20.5}
+        - {x: -46.714355, y: -7.5}
+        - {x: -46.714355, y: -24.5}
+        - {x: 46.285645, y: -24.5}
+        - {x: 46.285645, y: -10.5}
+        - {x: 18.285645, y: 24.5}
+      - - {x: 112.285645, y: 24.5}
+        - {x: 84.285645, y: 24.5}
+        - {x: 51.285645, y: -8.5}
+        - {x: 51.285645, y: -24.5}
+        - {x: 142.28564, y: -24.5}
+        - {x: 142.28564, y: -4.5}
+        - {x: 120.285645, y: 22.5}
+    - name: movil spikes_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -110.14282, y: 24.5}
+        - {x: -126.14282, y: 7.5}
+        - {x: -141.14282, y: -11.5}
+        - {x: -141.14282, y: -24.5}
+        - {x: -50.142822, y: -24.5}
+        - {x: -50.142822, y: -10.5}
+        - {x: -83.14282, y: 24.5}
+      - - {x: 9.857178, y: 24.5}
+        - {x: -16.142822, y: 24.5}
+        - {x: -45.142822, y: -0.5}
+        - {x: -45.142822, y: -24.5}
+        - {x: 47.857178, y: -24.5}
+        - {x: 47.857178, y: -9.5}
+        - {x: 21.857178, y: 18.5}
+      - - {x: 80.85718, y: 24.5}
+        - {x: 51.857178, y: -8.5}
+        - {x: 51.857178, y: -24.5}
+        - {x: 142.85718, y: -24.5}
+        - {x: 142.85718, y: -6.5}
+        - {x: 112.85718, y: 24.5}
+    - name: movil spikes_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 290
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -115.57141, y: 24.5}
+        - {x: -127.57141, y: 12.5}
+        - {x: -141.57141, y: -3.5}
+        - {x: -141.57141, y: -24.5}
+        - {x: -50.57141, y: -24.5}
+        - {x: -50.57141, y: -14.5}
+        - {x: -62.57141, y: 14.5}
+        - {x: -86.57141, y: 24.5}
+      - - {x: -24.571411, y: 24.5}
+        - {x: -39.57141, y: 20.5}
+        - {x: -46.57141, y: -7.5}
+        - {x: -46.57141, y: -24.5}
+        - {x: 46.42859, y: -24.5}
+        - {x: 46.42859, y: -10.5}
+        - {x: 18.428589, y: 24.5}
+      - - {x: 86.42859, y: 24.5}
+        - {x: 51.42859, y: -9.5}
+        - {x: 51.42859, y: -24.5}
+        - {x: 142.42859, y: -24.5}
+        - {x: 142.42859, y: 0.5}
+        - {x: 113.42859, y: 24.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

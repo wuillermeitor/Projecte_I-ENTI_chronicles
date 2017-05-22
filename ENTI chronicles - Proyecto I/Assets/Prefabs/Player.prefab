@@ -390,6 +390,7 @@ MonoBehaviour:
   move: 6.5
   salto: 18
   girado: 0
+  PlayerPosition: {x: 0, y: 0}
   touched: 0
   mustRecharge: 0
   herido: 0
@@ -399,7 +400,6 @@ MonoBehaviour:
   PlayerGun: 0
   PlayerMario: 0
   guntaken: 0
-  checkpoint: {fileID: 0}
   Dying: {fileID: 194118, guid: 2060332fa1852944091b749bd4b0da5f, type: 2}
   JumpCollider: {fileID: 123310}
   mana: {fileID: 0}
