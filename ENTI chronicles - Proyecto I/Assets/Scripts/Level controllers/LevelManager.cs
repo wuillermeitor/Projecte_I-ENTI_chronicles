@@ -18,6 +18,8 @@ public class LevelManager : MonoBehaviour {
     float counter;
     public string cinematic;
 
+    public GameObject checkpoint;
+
     void Start ()
     {
         player = FindObjectOfType<Player>();
@@ -34,6 +36,7 @@ public class LevelManager : MonoBehaviour {
 
     void Update()
     {
+        respawn();
 
         if (player.dead == true)
         {
@@ -47,23 +50,55 @@ public class LevelManager : MonoBehaviour {
 
         if (mario.dead == true)
         {
-            counter += Time.deltaTime;
-            if (counter >= 3)
-            {
-                PlayerPrefs.SetInt("balas", bullet.balas);
-                PlayerPrefs.SetInt("vida", Plife.counter);
-                GameData gameData = GameData.GetInstance();
-                gameData.AddValue("mario", mario);
-                gameData.AddValue("player", player);
-                gameData.AddValue("life", Plife);
-                gameData.AddValue("bullet", bullet);
-                gameData.AddValue("gun", gun);
-                Application.LoadLevel(cinematic);
-            }
+            passScene();
         }
     }
-    void save()
-    {
 
+    void passScene()
+    {
+        counter += Time.deltaTime;
+        if (counter >= 3)
+        {
+            PlayerPrefs.SetInt("balas", bullet.balas);
+            PlayerPrefs.SetInt("vida", Plife.counter);
+            GameData gameData = GameData.GetInstance();
+            gameData.AddValue("mario", mario);
+            gameData.AddValue("player", player);
+            gameData.AddValue("life", Plife);
+            gameData.AddValue("bullet", bullet);
+            gameData.AddValue("gun", gun);
+            Application.LoadLevel(cinematic);
+        }
+    }
+
+    void respawn()
+    {
+        //Condición que moverá al player al último check point si se sale del mapa.
+        if (player.outoflimit == true)
+        {
+            player.dead = true;
+            Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
+            player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
+        }
+        if (Plife.counter == 0)
+        {
+            player.dead = true;
+            player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
+            player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
+            Plife.counter = 6;
+        }
+        if (player.PlayerPosition.x >= 67)
+        {
+            checkpoint.GetComponent<Transform>().position = new Vector2(67, 3);
+        }
+        if (player.PlayerPosition.x >= 124)
+        {
+            checkpoint.GetComponent<Transform>().position = new Vector2(124, 3);
+        }
+        if (player.PlayerPosition.x >= 157)
+        {
+            checkpoint.GetComponent<Transform>().position = new Vector2(160, 3);
+        }
     }
 }

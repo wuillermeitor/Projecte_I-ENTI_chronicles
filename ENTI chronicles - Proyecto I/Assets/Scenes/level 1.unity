@@ -1134,6 +1134,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11426468, guid: fed5dd28622748d418fbbc7c574e3362, type: 2}
+      propertyPath: checkpoint
+      value: 
+      objectReference: {fileID: 1374685468}
     - target: {fileID: 164638, guid: fed5dd28622748d418fbbc7c574e3362, type: 2}
       propertyPath: m_Name
       value: LevelManager
@@ -2021,7 +2025,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 128
+      value: -14.7
       objectReference: {fileID: 0}
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3821,7 +3825,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 445920, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 128
+      value: -14.7
       objectReference: {fileID: 0}
     - target: {fileID: 445920, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_LocalPosition.y

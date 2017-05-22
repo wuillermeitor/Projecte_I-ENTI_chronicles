@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float salto;
     private bool wait;
     public bool girado;
-    private Vector2 PlayerPosition;
+    public Vector2 PlayerPosition;
     public bool touched;
     public bool mustRecharge;
     public bool herido;
@@ -26,7 +26,6 @@ public class Player : MonoBehaviour
     public bool guntaken;
 
     //Game Objects
-    public GameObject checkpoint;
     public GameObject Dying;
     public GameObject JumpCollider;
     public GameObject mana;
@@ -107,7 +106,6 @@ public class Player : MonoBehaviour
         saltar();
         atacar();
         damage();
-        respawn();
     }
 
     //CAMINAR
@@ -221,37 +219,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    //RESPAWN
-    void respawn()
-    {
-        //Condición que moverá al player al último check point si se sale del mapa.
-        if (outoflimit == true)
-        {
-            dead = true;
-            Instantiate(Dying, checkpoint.transform.position, transform.rotation);
-            GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
-        }
-        if (life.counter == 0)
-        {
-            dead = true;
-            GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
-            Instantiate(Dying, checkpoint.transform.position, transform.rotation);
-            GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
-            life.counter = 6;
-        }
-        if (PlayerPosition.x >= 67)
-        {
-            checkpoint.GetComponent<Transform>().position = new Vector2(67, 3);
-        }
-        if (PlayerPosition.x >= 124)
-        {
-            checkpoint.GetComponent<Transform>().position = new Vector2(124, 3);
-        }
-        if (PlayerPosition.x >= 157)
-        {
-            checkpoint.GetComponent<Transform>().position = new Vector2(160, 3);
-        }
-    }
 
     //DELAYS
     IEnumerator delaybyHit()

@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/GettingMarioPower.unity
   - enabled: 1
     path: Assets/Scenes/FinalLvl1.unity
+  - enabled: 1
+    path: Assets/Scenes/level 2.unity

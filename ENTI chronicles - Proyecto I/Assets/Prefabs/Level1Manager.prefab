@@ -42,6 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   cinematic: GettingMarioPower
+  checkpoint: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
