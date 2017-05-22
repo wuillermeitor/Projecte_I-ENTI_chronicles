@@ -50,6 +50,8 @@ public class LevelManager : MonoBehaviour {
             counter += Time.deltaTime;
             if (counter >= 3)
             {
+                PlayerPrefs.SetInt("balas", bullet.balas);
+                PlayerPrefs.SetInt("vida", Plife.counter);
                 GameData gameData = GameData.GetInstance();
                 gameData.AddValue("mario", mario);
                 gameData.AddValue("player", player);
@@ -59,5 +61,9 @@ public class LevelManager : MonoBehaviour {
                 Application.LoadLevel(cinematic);
             }
         }
+    }
+    void save()
+    {
+
     }
 }

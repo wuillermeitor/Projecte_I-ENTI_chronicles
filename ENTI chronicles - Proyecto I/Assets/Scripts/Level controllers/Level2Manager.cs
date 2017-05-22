@@ -34,6 +34,8 @@ public class Level2Manager : MonoBehaviour {
         gameData.GetValue("gun");
         player.marioskin = true;
         player.guntaken = true;
+        bullet.balas = PlayerPrefs.GetInt("balas");
+        Plife.counter = PlayerPrefs.GetInt("vida");
     }
 	
 	// Update is called once per frame
