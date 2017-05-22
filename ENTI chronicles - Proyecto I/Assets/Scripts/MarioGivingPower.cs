@@ -11,11 +11,18 @@ public class MarioGivingPower : MonoBehaviour
     public float counterM;
     public float counterP;
     public float cameralight;
-    public string level1;
+    public string FinalLvl1;
 
     // Use this for initialization
     void Start()
     {
+        GameData gameData = GameData.GetInstance();
+        gameData.GetValue("mario");
+        gameData.GetValue("player");
+        gameData.GetValue("life");
+        gameData.GetValue("bullet");
+        gameData.GetValue("gun");
+
         GetComponent<Camera>().backgroundColor = new Color(0f, 0f, 0f, 0f);
         player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         player = GameObject.Find("Getting Power");
@@ -43,7 +50,7 @@ public class MarioGivingPower : MonoBehaviour
         }
         if (cameralight <= 0)
         {
-            Application.LoadLevel(level1);
+            Application.LoadLevel(FinalLvl1);
         }
     }
 }

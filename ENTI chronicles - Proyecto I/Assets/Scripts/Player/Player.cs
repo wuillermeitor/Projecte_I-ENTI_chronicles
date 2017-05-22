@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public bool marioskin;
     public bool PlayerGun;
     public bool PlayerMario;
+    public bool guntaken;
 
     //Game Objects
     public GameObject checkpoint;
@@ -81,6 +82,7 @@ public class Player : MonoBehaviour
         inmunity = false;
         dead = false;
         marioskin = false;
+        guntaken = false;
     }    
     
     //UPDATE
@@ -175,7 +177,7 @@ public class Player : MonoBehaviour
 
     void PowerUpGun()
     {
-        if (gun.taken == true)
+        if (guntaken == true)
         {
             if (Input.GetKey("2") && moveVelocity == 0 && (grounded == true || grounded2 == true))
             {

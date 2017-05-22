@@ -31,6 +31,7 @@ public class TakePowerUp : MonoBehaviour
         if (Herocontact == true)
         {
             taken = true;
+            player.guntaken = true;
         }
         if (taken == true)
         {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LevelManager : MonoBehaviour {
+public class Level2Manager : MonoBehaviour {
 
     private Player player;
     private LifeManager Plife;
@@ -12,10 +12,9 @@ public class LevelManager : MonoBehaviour {
     private FireBall fireball;
     private MovimientoFireBall movfb;
 
-    public bool active;
-    float counter;
-    public string cinematic;
+    private TakePowerUp gun;
 
+    // Use this for initialization
     void Start ()
     {
         player = FindObjectOfType<Player>();
@@ -25,28 +24,20 @@ public class LevelManager : MonoBehaviour {
         Mlife = FindObjectOfType<MarioLife>();
         fireball = FindObjectOfType<FireBall>();
         movfb = FindObjectOfType<MovimientoFireBall>();
-        active = false;
-        counter = 0;
-    }
+        gun = FindObjectOfType<TakePowerUp>();
 
-    void Update()
-    {
-        if (player.dead == true)
-        {
-            active = true;
-            Plife.counter = 6;
-            bullet.balas = 10;
-            Mlife.counter = 4;
-            mario.GetComponent<Rigidbody2D>().position = new Vector2(191, 0.5f);
-            player.dead = false;
-        }
-
-        if (mario.dead == true)
-        {
-            counter += Time.deltaTime;
-            if (counter >= 3)
-            {
-            }
-        }
+        GameData gameData = GameData.GetInstance();
+        gameData.GetValue("mario");
+        gameData.GetValue("player");
+        gameData.GetValue("life");
+        gameData.GetValue("bullet");
+        gameData.GetValue("gun");
+        player.marioskin = true;
+        player.guntaken = true;
     }
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
 }
