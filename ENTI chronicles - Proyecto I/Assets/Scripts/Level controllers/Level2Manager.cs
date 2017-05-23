@@ -14,9 +14,19 @@ public class Level2Manager : MonoBehaviour {
 
     private TakePowerUp gun;
 
-    public GameObject checkpoint;
 
-    
+
+    public GameObject checkpoint;
+    public GameObject camara;
+
+    //Hero contact
+    public Transform Herocontactcheck;
+    public float HerocontactcheckRadius;
+    public LayerMask whatisHerocontact;
+    private bool Herocontact;
+
+    public bool close;
+
     void Start ()
     {
         player = FindObjectOfType<Player>();
@@ -37,11 +47,15 @@ public class Level2Manager : MonoBehaviour {
         player.guntaken = true;
         bullet.balas = PlayerPrefs.GetInt("balas");
         Plife.counter = PlayerPrefs.GetInt("vida");
+        close = false;
+
+
     }
 	
 	// Update is called once per frame
 	void Update () {
 
+        Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         respawn();
 
         if (player.dead == true)
@@ -49,6 +63,11 @@ public class Level2Manager : MonoBehaviour {
             Plife.counter = 6;
             bullet.balas = 10;
             player.dead = false;
+        }
+
+        if (Herocontact)
+        {
+            LockCamera();
         }
     }
 
@@ -70,5 +89,11 @@ public class Level2Manager : MonoBehaviour {
             player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
             Plife.counter = 6;
         }
+    }
+
+    void LockCamera()
+    {
+        camara.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        close = true;
     }
 }

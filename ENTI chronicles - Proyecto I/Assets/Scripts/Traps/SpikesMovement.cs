@@ -46,7 +46,7 @@ public class SpikesMovement : MonoBehaviour {
 
     void movimiento()
     {
-        if (count >= 1.5f)
+        if (count >= 2f)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, Upspeed);
             if (GetComponent<Transform>().position.y >= supPos)
