@@ -94,6 +94,7 @@ public class Level2Manager : MonoBehaviour {
     void LockCamera()
     {
         camara.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+        camara.GetComponent<Camera>().backgroundColor = new Color(0f, 0f, 0f, 1f);
         close = true;
     }
 }
