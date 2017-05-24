@@ -1622,11 +1622,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -29.49
+      value: -27.9
       objectReference: {fileID: 0}
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 464454, guid: 087fc50a7b3f0f94e8da75227578c1d4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3740,11 +3740,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 496060, guid: 9ba737c3e94bcfb44ac8f6255d78df2c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -29.49
+      value: -27.9
       objectReference: {fileID: 0}
     - target: {fileID: 496060, guid: 9ba737c3e94bcfb44ac8f6255d78df2c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.11
+      value: 10.2
       objectReference: {fileID: 0}
     - target: {fileID: 496060, guid: 9ba737c3e94bcfb44ac8f6255d78df2c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4325,6 +4325,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1915743675}
   - 212: {fileID: 1915743674}
+  - 61: {fileID: 1915743676}
   m_Layer: 0
   m_Name: Column
   m_TagString: Untagged
@@ -4356,7 +4357,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -926015459
+  m_SortingLayerID: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b28f55c75d171e84c8f6d94a72716329, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4375,6 +4376,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 197225914}
   m_RootOrder: 3
+--- !u!61 &1915743676
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1915743673}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.3, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 6}
 --- !u!1 &1959497935
 GameObject:
   m_ObjectHideFlags: 0
