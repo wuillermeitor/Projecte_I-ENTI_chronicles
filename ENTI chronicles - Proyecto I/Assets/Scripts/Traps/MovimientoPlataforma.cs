@@ -8,6 +8,7 @@ public class MovimientoPlataforma : MonoBehaviour {
 
     public float platformspeed;
     private bool IsGoingRight;
+    public float speed;
 
     public GameObject StartPoint;
     public GameObject EndPoint;
@@ -36,26 +37,15 @@ public class MovimientoPlataforma : MonoBehaviour {
     {
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         movimiento();
-
-        if (Herocontact)
-        {
-            player.GetComponent<Rigidbody2D>().isKinematic = true;
-            player.transform.position = new Vector2(transform.position.x, player.transform.position.y);
-            camara.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -1);
-        }
-        else
-        {
-            player.GetComponent<Rigidbody2D>().isKinematic = false;
-        }
     }
 
     void movimiento()
     {
         if (IsGoingRight)
         {
-            transform.position = Vector3.MoveTowards(transform.position, EndPoint.transform.position, platformspeed * Time.deltaTime);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
 
-            if (transform.position == EndPoint.transform.position)
+            if (GetComponent<Transform>().position.x >= EndPoint.GetComponent<Transform>().position.x-1)
             {
                 IsGoingRight = false;
             }
@@ -63,8 +53,8 @@ public class MovimientoPlataforma : MonoBehaviour {
 
         if (!IsGoingRight)
         {
-            transform.position = Vector3.MoveTowards(transform.position, StartPoint.transform.position, platformspeed * Time.deltaTime);
-            if (transform.position == StartPoint.transform.position)
+            GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
+            if (GetComponent<Transform>().position.x <= StartPoint.GetComponent<Transform>().position.x+1)
             {
                 IsGoingRight = true;
             }
