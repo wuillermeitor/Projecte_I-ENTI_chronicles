@@ -7,7 +7,6 @@ public class MovimientoPlataforma : MonoBehaviour {
     public GameObject camara;
 
     public float platformspeed;
-    private bool IsGoingRight;
     public float speed;
 
     public GameObject StartPoint;
@@ -21,15 +20,7 @@ public class MovimientoPlataforma : MonoBehaviour {
     // Use this for initialization
     void Start () {
         player = FindObjectOfType<Player>();
-
-        if (IsGoingRight)
-        {
-            transform.position = StartPoint.transform.position;
-        }
-        else
-        {
-            transform.position = EndPoint.transform.position;
-        }
+        transform.position = StartPoint.transform.position;
     }
 	
 	// Update is called once per frame
