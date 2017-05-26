@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 45b853a86e807584e897d8eaaf6686d7
+timeCreated: 1495786082
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Megaman quieto_0
+    21300002: Megaman quieto_1
+    21300004: Megaman quieto_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Megaman quieto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: -50}
+        - {x: 90, y: -48}
+        - {x: 82, y: -30}
+        - {x: 80, y: -28}
+        - {x: 74, y: -19}
+        - {x: 64, y: 41}
+        - {x: 47, y: 82}
+        - {x: -38, y: 82}
+        - {x: -80, y: 62}
+        - {x: -102, y: -18}
+        - {x: -112, y: -89}
+        - {x: -112, y: -160}
+        - {x: 102, y: -160}
+        - {x: 102, y: -137}
+        - {x: 94, y: -128}
+    - name: Megaman quieto_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: -50}
+        - {x: 90, y: -48}
+        - {x: 82, y: -30}
+        - {x: 80, y: -28}
+        - {x: 74, y: -19}
+        - {x: 64, y: 41}
+        - {x: 47, y: 82}
+        - {x: -38, y: 82}
+        - {x: -80, y: 62}
+        - {x: -102, y: -18}
+        - {x: -112, y: -89}
+        - {x: -112, y: -160}
+        - {x: 102, y: -160}
+        - {x: 102, y: -137}
+        - {x: 94, y: -128}
+    - name: Megaman quieto_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92, y: -41}
+        - {x: 87, y: -21}
+        - {x: 64, y: 41}
+        - {x: 33, y: 82}
+        - {x: -34, y: 82}
+        - {x: -41, y: 81}
+        - {x: -57, y: 53}
+        - {x: -102, y: -18}
+        - {x: -112, y: -89}
+        - {x: -112, y: -160}
+        - {x: 82, y: -160}
+        - {x: 89, y: -135}
+        - {x: 67, y: -108}
+        - {x: 92, y: -103}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

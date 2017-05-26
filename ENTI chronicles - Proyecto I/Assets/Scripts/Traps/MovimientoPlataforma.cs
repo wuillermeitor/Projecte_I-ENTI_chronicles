@@ -37,27 +37,27 @@ public class MovimientoPlataforma : MonoBehaviour {
     {
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         movimiento();
+        if (Herocontact && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+        {
+            Vector2 temp;
+            temp = player.GetComponent<Rigidbody2D>().velocity;
+            temp.x = speed;
+
+            player.GetComponent<Rigidbody2D>().velocity = temp; 
+        }
     }
 
     void movimiento()
     {
-        if (IsGoingRight)
+        if (GetComponent<Transform>().position.x >= EndPoint.GetComponent<Transform>().position.x)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
-
-            if (GetComponent<Transform>().position.x >= EndPoint.GetComponent<Transform>().position.x-1)
-            {
-                IsGoingRight = false;
-            }
+            speed *= -1;
         }
 
-        if (!IsGoingRight)
+        if (GetComponent<Transform>().position.x <= StartPoint.GetComponent<Transform>().position.x)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
-            if (GetComponent<Transform>().position.x <= StartPoint.GetComponent<Transform>().position.x+1)
-            {
-                IsGoingRight = true;
-            }
+            speed *= -1;
         }
+        GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
     }
 }

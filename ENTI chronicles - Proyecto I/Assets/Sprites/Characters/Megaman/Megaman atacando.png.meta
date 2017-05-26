@@ -1,0 +1,111 @@
+fileFormatVersion: 2
+guid: cf4520578393c3646afe4fa3eca87daf
+timeCreated: 1495786054
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Megaman atacando_0
+    21300002: Megaman atacando_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Megaman atacando_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: -78}
+        - {x: 157, y: -61}
+        - {x: 160, y: -52}
+        - {x: 160, y: -3}
+        - {x: 134, y: 18}
+        - {x: 80, y: 17}
+        - {x: 43, y: 82}
+        - {x: -15, y: 82}
+        - {x: -35, y: 72}
+        - {x: -146, y: -1}
+        - {x: -152, y: -33}
+        - {x: -152, y: -160}
+        - {x: 64, y: -160}
+        - {x: 62, y: -140}
+        - {x: 59, y: -121}
+    - name: Megaman atacando_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 320
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: -78}
+        - {x: 157, y: -61}
+        - {x: 160, y: -52}
+        - {x: 160, y: -3}
+        - {x: 134, y: 18}
+        - {x: 80, y: 17}
+        - {x: 43, y: 82}
+        - {x: -15, y: 82}
+        - {x: -35, y: 72}
+        - {x: -146, y: -1}
+        - {x: -152, y: -33}
+        - {x: -152, y: -160}
+        - {x: 64, y: -160}
+        - {x: 62, y: -140}
+        - {x: 59, y: -121}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
