@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class LifeManager : MonoBehaviour
 {
@@ -7,25 +8,28 @@ public class LifeManager : MonoBehaviour
 
     public int counter;
     Animator Life;
-    
+    public Sprite[] vidas;
 
 
     void Start()
     {
         player = FindObjectOfType<Player>();
-        Life = GetComponent<Animator>();
         counter = 6;
-        Life.SetInteger("Life", counter);
     }
     
     void Update()
     {
-        Life.SetInteger("Life", counter);
+        GetComponent<Image>().sprite = vidas[counter];
+
         if (player.herido == true)
-        {
+        {          
             StartCoroutine(delaybyHit());
         }
     }
+
+
+
+
     IEnumerator delaybyHit()
     {
         counter--;
