@@ -4,6 +4,7 @@ using System.Collections;
 public class CaidaPlataforma : MonoBehaviour {
 
     private Player player;
+    private LifeManager life;
     public Transform HerocontactcheckUp;
     public float HerocontactcheckRadius;
     public LayerMask whatisHerocontact;
@@ -15,7 +16,8 @@ public class CaidaPlataforma : MonoBehaviour {
     void Start ()
     {
         player = FindObjectOfType<Player>();
-  
+        life = FindObjectOfType<LifeManager>();
+
     }
 	
 	// Update is called once per frame
@@ -25,12 +27,13 @@ public class CaidaPlataforma : MonoBehaviour {
 
         if (HerocontactUp == true)
         {
-            GetComponent<Rigidbody2D>().isKinematic = false;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, velocityCaida);
+            GetComponent<Rigidbody2D>().gravityScale = 1;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocityCaida);
         }
-        if (player.outoflimit == true)
+        if (player.outoflimit || life.Life_Counter == 0)
         {
-            GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
         }
     }

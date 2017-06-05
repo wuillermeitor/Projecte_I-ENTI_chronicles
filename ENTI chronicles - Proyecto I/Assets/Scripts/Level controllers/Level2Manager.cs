@@ -61,7 +61,6 @@ public class Level2Manager : MonoBehaviour {
         if (player.dead == true)
         {
             Plife.Life_Counter = 6;
-            bullet.balas = 10;
             player.dead = false;
         }
 

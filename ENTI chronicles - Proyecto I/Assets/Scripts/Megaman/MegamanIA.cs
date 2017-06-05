@@ -243,6 +243,7 @@ public class MegamanIA : MonoBehaviour
         {
             touched = true;
             bullet.balaexistiendo = false;
+            fireball.FBexistiendo = false;
             lvlmanager.enemyTouched = true;
         }
         if (touched == true && inmunity == false && life.counter != 0)
