@@ -5,19 +5,19 @@ public class BulletGen : MonoBehaviour {
     public GameObject BulletPrefab;
     public Transform BulletSpawner;
     private Player player;
-    public Animator mana;
+    private Gun_Mana mana;
     public int balas = 10;
     public bool balaexistiendo;
 
     void Start ()
     {
-        mana = GameObject.Find("FullMana").GetComponent<Animator>();
+        mana = FindObjectOfType<Gun_Mana>();
         player = FindObjectOfType<Player>();
         balaexistiendo = false;
     }
     void Update()
     {
-        mana.SetInteger("balas", balas);
+        mana.balas = balas;
         if (player.mustRecharge == false && balas > 0)
         {
             PlayerShooting();

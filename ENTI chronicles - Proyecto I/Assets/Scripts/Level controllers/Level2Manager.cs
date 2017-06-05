@@ -46,7 +46,7 @@ public class Level2Manager : MonoBehaviour {
         player.marioskin = true;
         player.guntaken = true;
         bullet.balas = PlayerPrefs.GetInt("balas");
-        Plife.counter = PlayerPrefs.GetInt("vida");
+        Plife.Life_Counter = PlayerPrefs.GetInt("vida");
         close = false;
 
 
@@ -60,7 +60,7 @@ public class Level2Manager : MonoBehaviour {
 
         if (player.dead == true)
         {
-            Plife.counter = 6;
+            Plife.Life_Counter = 6;
             bullet.balas = 10;
             player.dead = false;
         }
@@ -81,13 +81,13 @@ public class Level2Manager : MonoBehaviour {
             Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
             player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
         }
-        if (Plife.counter == 0)
+        if (Plife.Life_Counter == 0)
         {
             player.dead = true;
             player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
             player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
-            Plife.counter = 6;
+            Plife.Life_Counter = 6;
         }
     }
 

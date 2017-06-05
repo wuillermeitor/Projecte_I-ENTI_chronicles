@@ -39,7 +39,7 @@ public class SpikesMovement : MonoBehaviour {
         {
             if (HerocontactRight || HerocontactLeft || HerocontactUp)
             {
-                life.counter = 0;
+                life.Life_Counter = 0;
             }
         }
     }

@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour {
         if (player.dead == true)
         {
             active = true;
-            Plife.counter = 6;
+            Plife.Life_Counter = 6;
             bullet.balas = 10;
             Mlife.counter = 4;
             mario.GetComponent<Rigidbody2D>().position = new Vector2(191, 0.5f);
@@ -60,7 +60,7 @@ public class LevelManager : MonoBehaviour {
         if (counter >= 3)
         {
             PlayerPrefs.SetInt("balas", bullet.balas);
-            PlayerPrefs.SetInt("vida", Plife.counter);
+            PlayerPrefs.SetInt("vida", Plife.Life_Counter);
             GameData gameData = GameData.GetInstance();
             gameData.AddValue("mario", mario);
             gameData.AddValue("player", player);
@@ -80,13 +80,13 @@ public class LevelManager : MonoBehaviour {
             Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
             player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
         }
-        if (Plife.counter == 0)
+        if (Plife.Life_Counter == 0)
         {
             player.dead = true;
             player.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             Instantiate(player.Dying, checkpoint.transform.position, transform.rotation);
             player.GetComponent<Rigidbody2D>().position = (checkpoint.transform.position);
-            Plife.counter = 6;
+            Plife.Life_Counter = 6;
         }
         if (player.PlayerPosition.x >= 67)
         {

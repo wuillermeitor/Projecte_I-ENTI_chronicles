@@ -8,7 +8,7 @@ public class MegamanIA : MonoBehaviour
     private MMbalaGen balaMM;
     private Player player;
     private BulletGen bullet;
-    private Movimiento_balas balas;
+    private FBGen fireball;
     public GameObject vida;
     private AllSceneController lvlmanager;
 
@@ -68,8 +68,8 @@ public class MegamanIA : MonoBehaviour
     void Start()
     {
         lvlmanager = FindObjectOfType<AllSceneController>();
-        balas = FindObjectOfType<Movimiento_balas>();
         bullet = FindObjectOfType<BulletGen>();
+        fireball = FindObjectOfType<FBGen>();
         balaMM = FindObjectOfType<MMbalaGen>();
         life = FindObjectOfType<MegamanLife>();
         player = FindObjectOfType<Player>();
@@ -109,7 +109,7 @@ public class MegamanIA : MonoBehaviour
                 jump.SetBool("jump", true);
             }
 
-            if (player.punchcheck == true || bullet.balaexistiendo == true)
+            if (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true)
             {
                 saltar();
             }
@@ -239,7 +239,7 @@ public class MegamanIA : MonoBehaviour
 
     void damage()
     {
-        if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true))
+        if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
         {
             touched = true;
             bullet.balaexistiendo = false;

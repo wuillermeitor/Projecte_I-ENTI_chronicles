@@ -6,14 +6,14 @@ public class FBGen : MonoBehaviour {
     public GameObject FBPrefab;
     public Transform FBSpawner;
     private Player player;
-    public Animator mana;
+    private HeroPower_Mana mana;
     public int FB = 10;
     public bool FBexistiendo;
 
 
     void Start ()
     {
-        mana = GameObject.Find("HeroPowerMana").GetComponent<Animator>();
+        mana = FindObjectOfType<HeroPower_Mana>();
         player = FindObjectOfType<Player>();
         FBexistiendo = false;
     }
@@ -21,7 +21,7 @@ public class FBGen : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        mana.SetInteger("mana", FB);
+        mana.Mana_Counter = FB;
         if (player.mustRecharge == false && FB > 0)
         {
             PlayerShooting();
