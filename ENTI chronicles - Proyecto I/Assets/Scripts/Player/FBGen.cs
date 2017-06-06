@@ -7,9 +7,7 @@ public class FBGen : MonoBehaviour {
     public Transform FBSpawner;
     private Player player;
     private HeroPower_Mana mana;
-    public int FB = 10;
     public bool FBexistiendo;
-
 
     void Start ()
     {
@@ -21,8 +19,7 @@ public class FBGen : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        mana.Mana_Counter = FB;
-        if (player.mustRecharge == false && FB > 0)
+        if (player.mustRecharge == false && mana.Mana_Counter > 0)
         {
             PlayerShooting();
         }
@@ -33,7 +30,7 @@ public class FBGen : MonoBehaviour {
         FBexistiendo = true;
         player.mustRecharge = true;
         Instantiate(FBPrefab, FBSpawner.position, FBSpawner.rotation);
-        FB--;
+        mana.Mana_Counter--;
         yield return new WaitForSeconds(0.6f);
         player.mustRecharge = false;
         FBexistiendo = false;

@@ -64,6 +64,10 @@ public class Level2Manager : MonoBehaviour {
             player.dead = false;
         }
 
+        if (player.GetComponent<Transform>().position.x >= 76)
+        {
+            checkpoint.GetComponent<Transform>().position = new Vector2(79, -4);
+        }
         if (Herocontact)
         {
             LockCamera();

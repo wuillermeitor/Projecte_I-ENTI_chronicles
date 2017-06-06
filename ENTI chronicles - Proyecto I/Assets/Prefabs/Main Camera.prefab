@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e72008631a74a439d68f580851324f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mana_Counter: 0
+  Mana_Counter: 10
   Mana:
   - {fileID: 21300000, guid: 95d4db730c65ca940817d797714c2a7a, type: 3}
   - {fileID: 21300000, guid: 32c1e266f72b2874ab810887e5a93eb9, type: 3}
@@ -484,6 +484,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7dc3bc4953a766044953e8838b04db02, type: 3}
   - {fileID: 21300000, guid: c439a842e50daf440811177676b9f45f, type: 3}
   - {fileID: 21300000, guid: 85a22ee6c812fd94795a994a1fb8eff8, type: 3}
+  cooldown: 3
+  cooldowncounter: 0
 --- !u!114 &114714860044249460
 MonoBehaviour:
   m_ObjectHideFlags: 1
