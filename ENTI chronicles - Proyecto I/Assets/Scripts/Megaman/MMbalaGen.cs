@@ -6,11 +6,11 @@ public class MMbalaGen : MonoBehaviour
     public GameObject FireBallPrefab;
     public Transform FireBallSpawner;
     private MegamanIA Megaman;
-    public bool fireballnow;
+    public bool bulletnow;
 
     void Start()
     {
-        fireballnow = false;
+        bulletnow = false;
         Megaman = FindObjectOfType<MegamanIA>();
     }
 
@@ -21,10 +21,10 @@ public class MMbalaGen : MonoBehaviour
 
     public void MarioAttack()
     {
-        if (Megaman.counter >= 1f && Megaman.ataque == true && fireballnow == false)
+        if (Megaman.counter >= 1f && Megaman.ataque == true && bulletnow == false)
         {
             Instantiate(FireBallPrefab, FireBallSpawner.position, FireBallSpawner.rotation);
-            fireballnow = true;
+            bulletnow = true;
             Megaman.ataque = false;
         }
     }

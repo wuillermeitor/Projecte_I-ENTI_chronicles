@@ -4154,18 +4154,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9555884, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e699c07c18a107b4da6b11d994537ab3, type: 2}
-    - target: {fileID: 25506772, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 116788873}
     - target: {fileID: 25563510, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 116788873}
+    - target: {fileID: 25506772, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 116788873}
+    - target: {fileID: 9555884, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e699c07c18a107b4da6b11d994537ab3, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5a05907f9d553a49a54dcff5dbb2030, type: 2}
   m_IsPrefabParent: 0

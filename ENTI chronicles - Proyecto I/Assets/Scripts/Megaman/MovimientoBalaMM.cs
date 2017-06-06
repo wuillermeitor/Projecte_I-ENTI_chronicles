@@ -4,21 +4,15 @@ using System.Collections;
 public class MovimientoBalaMM : MonoBehaviour
 {
 
-    public Rigidbody2D FBRG;
+    public Rigidbody2D BulletRG;
     private MegamanIA Megaman;
     private Player player;
-    private LevelManager level;
+    private Level2Manager level2;
     private GameObject Mario;
 
-    public float FBMovement;
-    private float FBSpeed;
-    public float FBLife;
-
-    public Transform groundcheck;
-    public float groundcheckRadius;
-    public LayerMask whatisground;
-    private bool grounded;
-    public float salto;
+    public float BulletMovement;
+    private float BulletSpeed;
+    public float BulletLife;
 
     //Encontrar contacto con el jugador
     public Transform Herocontactcheck;
@@ -29,50 +23,40 @@ public class MovimientoBalaMM : MonoBehaviour
     private void Awake()
     {
         Megaman = FindObjectOfType<MegamanIA>();
-        level = FindObjectOfType<LevelManager>();
+        level2 = FindObjectOfType<Level2Manager>();
         player = FindObjectOfType<Player>();
-        FBRG = GetComponent<Rigidbody2D>();
+        BulletRG = GetComponent<Rigidbody2D>();
         Mario = GameObject.FindWithTag("Mario");
     }
 
     void Start()
     {
-        level.active = false;
+        level2.active = false;
         if (Megaman.der == true)
         {
-            FBSpeed = FBMovement;
+            BulletSpeed = BulletMovement;
         }
         else if (Megaman.iz == true)
         {
-            FBSpeed = -FBMovement;
+            BulletSpeed = -BulletMovement;
         }
-        FBRG.velocity = new Vector2(FBSpeed, FBRG.velocity.y);
+        BulletRG.velocity = new Vector2(BulletSpeed, BulletRG.velocity.y);
     }
 
     void Update()
     {
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
-        grounded = Physics2D.OverlapCircle(groundcheck.position, groundcheckRadius, whatisground);
-
-        saltar();
-        Destroy(gameObject, FBLife);
+        
+        Destroy(gameObject, BulletLife);
 
         if (player.inmunity == false && Herocontact == true)
         {
             player.touched = true;
         }
 
-        if (level.active == true)
+        if (level2.active == true)
         {
             Destroy(gameObject);
-        }
-    }
-
-    void saltar()
-    {
-        if (grounded == true)
-        {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(FBSpeed, salto);
         }
     }
 }

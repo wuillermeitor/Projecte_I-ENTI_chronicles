@@ -43,10 +43,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 479270}
+  - component: {fileID: 114895155890281188}
   m_Layer: 0
   m_Name: BulletSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: -5082302936091411984, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -4087464717476244675, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -178,7 +179,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7, y: -0.3, z: 0}
+  m_LocalPosition: {x: 2.04, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 418408}
@@ -229,7 +230,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6125478
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -316,7 +317,7 @@ MonoBehaviour:
   velocityMove: 0
   VelRight: 5
   VelLeft: -5
-  stopDistance: 8
+  stopDistance: 13
   BulletTime: 3
   salto: 20
   der: 0
@@ -330,7 +331,7 @@ MonoBehaviour:
   bossScene: 0
   hit: 0
   Herocheck: {fileID: 476352}
-  HeroVisioncheckRange: 10
+  HeroVisioncheckRange: 15
   whatisHeroVision:
     serializedVersion: 2
     m_Bits: 16384
@@ -443,3 +444,18 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148138}
   m_IsPrefabParent: 1
+--- !u!114 &114895155890281188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32046cecb5ad79f468c81b6bc5e11f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireBallPrefab: {fileID: 1711693858613484, guid: 08805ce4a70a95544b1dbab03326eb96,
+    type: 2}
+  FireBallSpawner: {fileID: 479270}
+  bulletnow: 0

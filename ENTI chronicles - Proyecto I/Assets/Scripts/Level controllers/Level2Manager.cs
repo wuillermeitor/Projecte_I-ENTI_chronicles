@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level2Manager : MonoBehaviour {
+public class Level2Manager : MonoBehaviour
+{
 
     private Player player;
     private LifeManager Plife;
@@ -11,6 +12,11 @@ public class Level2Manager : MonoBehaviour {
     private MarioLife Mlife;
     private FireBall fireball;
     private MovimientoFireBall movfb;
+
+    private MegamanIA megaman;
+    private MegamanLife MMlife;
+    private MMbalaGen MMbullet;
+    private MovimientoBalaMM movb;
 
     private TakePowerUp gun;
 
@@ -25,9 +31,10 @@ public class Level2Manager : MonoBehaviour {
     public LayerMask whatisHerocontact;
     private bool Herocontact;
 
+    public bool active;
     public bool close;
 
-    void Start ()
+    void Start()
     {
         player = FindObjectOfType<Player>();
         Plife = FindObjectOfType<LifeManager>();
@@ -36,7 +43,11 @@ public class Level2Manager : MonoBehaviour {
         Mlife = FindObjectOfType<MarioLife>();
         fireball = FindObjectOfType<FireBall>();
         movfb = FindObjectOfType<MovimientoFireBall>();
-        gun = FindObjectOfType<TakePowerUp>();
+
+        megaman = FindObjectOfType<MegamanIA>();
+        MMlife = FindObjectOfType<MegamanLife>();
+        MMbullet = FindObjectOfType<MMbalaGen>();
+        movb = FindObjectOfType<MovimientoBalaMM>();
 
         GameData gameData = GameData.GetInstance();
         gameData.GetValue("player");
@@ -51,16 +62,19 @@ public class Level2Manager : MonoBehaviour {
 
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update()
+    {
 
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         respawn();
 
         if (player.dead == true)
         {
+            active = true;
             Plife.Life_Counter = 6;
+            MMlife.counter = 6;
+            megaman.GetComponent<Rigidbody2D>().position = new Vector2(-36, -28);
             player.dead = false;
         }
 
@@ -68,6 +82,11 @@ public class Level2Manager : MonoBehaviour {
         {
             checkpoint.GetComponent<Transform>().position = new Vector2(79, -4);
         }
+        if (player.GetComponent<Transform>().position.y <= -28 && player.GetComponent<Transform>().position.x <= -11)
+        {
+            checkpoint.GetComponent<Transform>().position = new Vector2(-11, -24);
+        }
+
         if (Herocontact)
         {
             LockCamera();

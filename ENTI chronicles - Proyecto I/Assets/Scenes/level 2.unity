@@ -5707,7 +5707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1836572141
 Transform:
   m_ObjectHideFlags: 0
@@ -6995,6 +6995,7 @@ MonoBehaviour:
   whatisHerocontact:
     serializedVersion: 2
     m_Bits: 16384
+  active: 0
   close: 0
 --- !u!4 &2138795966
 Transform:

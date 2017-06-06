@@ -16,7 +16,6 @@ public class FBGen : MonoBehaviour {
         FBexistiendo = false;
     }
 	
-	// Update is called once per frame
 	void Update ()
     {
         if (player.mustRecharge == false && mana.Mana_Counter > 0)
@@ -33,6 +32,7 @@ public class FBGen : MonoBehaviour {
         mana.Mana_Counter--;
         yield return new WaitForSeconds(0.6f);
         player.mustRecharge = false;
+        yield return new WaitForSeconds(3f);
         FBexistiendo = false;
     }
 

@@ -215,7 +215,7 @@ public class MegamanIA : MonoBehaviour
         ataque = true;
         hit = !hit;
         yield return new WaitForSeconds(0.001f);
-        balaMM.fireballnow = false;
+        balaMM.bulletnow = false;
         attack.SetBool("attack", false);
         counter = 0;
     }

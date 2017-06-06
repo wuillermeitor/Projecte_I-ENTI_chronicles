@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class BulletGen : MonoBehaviour {
+
     public GameObject BulletPrefab;
     public Transform BulletSpawner;
     private Player player;
@@ -15,6 +16,7 @@ public class BulletGen : MonoBehaviour {
         player = FindObjectOfType<Player>();
         balaexistiendo = false;
     }
+
     void Update()
     {
         mana.balas = balas;
