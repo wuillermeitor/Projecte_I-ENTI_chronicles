@@ -258,12 +258,12 @@ public class MarioIA : MonoBehaviour
         death.SetBool("death", true);
         yield return new WaitForSeconds(0.2f);
         life.counter--;
-        GetComponent<Rigidbody2D>().isKinematic = true;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
         yield return new WaitForSeconds(0.8f);
         grounded = true;
         saltar();
         GetComponent<BoxCollider2D>().isTrigger = true;
-        GetComponent<Rigidbody2D>().isKinematic = false;
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
     }
 
     void muerte()

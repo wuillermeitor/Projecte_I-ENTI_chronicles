@@ -239,11 +239,9 @@ public class MegamanIA : MonoBehaviour
 
     void damage()
     {
-        if (Punched == true && (player.punchcheck == true || bullet.balaexistiendo == true || fireball.FBexistiendo == true))
+        if (Punched)
         {
             touched = true;
-            bullet.balaexistiendo = false;
-            fireball.FBexistiendo = false;
             lvlmanager.enemyTouched = true;
         }
         if (touched == true && inmunity == false && life.counter != 0)

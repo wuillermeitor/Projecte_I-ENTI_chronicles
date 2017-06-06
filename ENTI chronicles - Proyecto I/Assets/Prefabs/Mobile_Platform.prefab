@@ -71,7 +71,7 @@ GameObject:
   m_Layer: 8
   m_Name: TopLeft
   m_TagString: Untagged
-  m_Icon: {fileID: -3545028842045912814, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -3839803715187477772, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -86,7 +86,7 @@ GameObject:
   m_Layer: 8
   m_Name: TopRight
   m_TagString: Untagged
-  m_Icon: {fileID: 2270504221434485236, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -3839803715187477772, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -177,7 +177,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &61565395181861154
 BoxCollider2D:
@@ -221,7 +221,7 @@ MonoBehaviour:
   StartPoint: {fileID: 1800556569797686}
   EndPoint: {fileID: 1918796594866676}
   Herocontactcheck: {fileID: 4366353642273446}
-  HerocontactcheckRadius: 0.5
+  HerocontactcheckRadius: 1.5
   whatisHerocontact:
     serializedVersion: 2
     m_Bits: 16384

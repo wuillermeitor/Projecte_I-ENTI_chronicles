@@ -317,7 +317,7 @@ MonoBehaviour:
   velocityMove: 0
   VelRight: 5
   VelLeft: -5
-  stopDistance: 13
+  stopDistance: 15
   BulletTime: 3
   salto: 20
   der: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   bossScene: 0
   hit: 0
   Herocheck: {fileID: 476352}
-  HeroVisioncheckRange: 15
+  HeroVisioncheckRange: 18
   whatisHeroVision:
     serializedVersion: 2
     m_Bits: 16384
