@@ -3,6 +3,8 @@ using System.Collections;
 
 public class LevelManager : MonoBehaviour {
 
+    public string mainmenu;
+
     private Player player;
     private LifeManager Plife;
     private BulletGen bullet;
@@ -36,6 +38,10 @@ public class LevelManager : MonoBehaviour {
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.LoadLevel(mainmenu);
+        }
         respawn();
 
         if (player.dead == true)

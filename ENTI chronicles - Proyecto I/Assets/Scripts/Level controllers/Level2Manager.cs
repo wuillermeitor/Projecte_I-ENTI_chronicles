@@ -4,6 +4,8 @@ using System.Collections;
 public class Level2Manager : MonoBehaviour
 {
 
+    public string mainmenu;
+
     private Player player;
     private LifeManager Plife;
     private BulletGen bullet;
@@ -68,7 +70,10 @@ public class Level2Manager : MonoBehaviour
 
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         respawn();
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.LoadLevel(mainmenu);
+        }
         if (player.dead == true)
         {
             active = true;

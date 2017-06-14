@@ -3,6 +3,8 @@ using System.Collections;
 
 public class lvl1tolvl2 : MonoBehaviour {
 
+    public string mainmenu;
+
     private Player player;
     private LifeManager Plife;
     private BulletGen bullet;
@@ -47,6 +49,10 @@ public class lvl1tolvl2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.LoadLevel(mainmenu);
+        }
         Herocontact = Physics2D.OverlapCircle(Herocontactcheck.position, HerocontactcheckRadius, whatisHerocontact);
         if (Herocontact)
         {
